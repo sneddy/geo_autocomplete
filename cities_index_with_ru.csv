@@ -1,0 +1,399 @@
+priority,city,city_ascii,lat,lng,country,iso2,iso3,population,city_ru,country_ru
+0,Almaty,Almaty,43.24,76.915,Kazakhstan,KZ,KAZ,1916000,Алматы,Казахстан
+1,Shymkent,Shymkent,42.3167,69.5958,Kazakhstan,KZ,KAZ,1184000,Шымкент,Казахстан
+2,Astana,Astana,51.1472,71.4222,Kazakhstan,KZ,KAZ,1078000,Астана,Казахстан
+3,Qaraghandy,Qaraghandy,49.8028,73.1056,Kazakhstan,KZ,KAZ,497000,Караганда,Казахстан
+4,Öskemen,Oskemen,49.9833,82.6167,Kazakhstan,KZ,KAZ,400000,Усть-Каменогорск,Казахстан
+5,Aqtöbe,Aqtobe,50.2836,57.2297,Kazakhstan,KZ,KAZ,387000,Актобе,Казахстан
+6,Taraz,Taraz,42.9,71.3667,Kazakhstan,KZ,KAZ,357000,Тараз,Казахстан
+7,Semey,Semey,50.4333,80.2667,Kazakhstan,KZ,KAZ,350000,Семей,Казахстан
+8,Pavlodar,Pavlodar,52.3,76.95,Kazakhstan,KZ,KAZ,343000,Павлодар,Казахстан
+9,Türkistan,Turkistan,43.3019,68.2692,Kazakhstan,KZ,KAZ,250000,Туркестан,Казахстан
+10,Qyzylorda,Qyzylorda,44.85,65.5167,Kazakhstan,KZ,KAZ,242000,Кызылорда,Казахстан
+11,Oral,Oral,51.2225,51.3725,Kazakhstan,KZ,KAZ,234000,Оральный,Казахстан
+12,Qostanay,Qostanay,53.2,63.62,Kazakhstan,KZ,KAZ,217000,Костанай,Казахстан
+13,Petropavl,Petropavl,54.8833,69.1667,Kazakhstan,KZ,KAZ,201000,Петропавль,Казахстан
+14,London,London,51.5072,-0.1275,United Kingdom,GB,GBR,11262000,Лондон,Великобритания
+15,Paris,Paris,48.8567,2.3522,France,FR,FRA,11060000,Париж,Франция
+16,Madrid,Madrid,40.4169,-3.7033,Spain,ES,ESP,6211000,Мадрид,Испания
+17,Berlin,Berlin,52.52,13.405,Germany,DE,DEU,4890000,Берлин,Германия
+18,Barcelona,Barcelona,41.3828,2.1769,Spain,ES,ESP,4800000,Барселона,Испания
+19,Athens,Athens,37.9842,23.7281,Greece,GR,GRC,3059000,Афины,Греция
+20,Budapest,Budapest,47.4925,19.0514,Hungary,HU,HUN,2997000,Будапешт,Венгрия
+21,Birmingham,Birmingham,52.48,-1.9025,United Kingdom,GB,GBR,2919000,Бирмингем,Великобритания
+22,Stuttgart,Stuttgart,48.7775,9.18,Germany,DE,DEU,2787000,Штутгарт,Германия
+23,Rome,Rome,41.8933,12.4828,Italy,IT,ITA,2748000,Рим,Италия
+24,Munich,Munich,48.1375,11.575,Germany,DE,DEU,2606000,Мюнхен,Германия
+25,Hamburg,Hamburg,53.55,10.0,Germany,DE,DEU,2484000,Гамбург,Германия
+26,Bucharest,Bucharest,44.4325,26.1039,Romania,RO,ROU,2412000,Бухарест,Румыния
+27,Vienna,Vienna,48.2083,16.3725,Austria,AT,AUT,2223000,Вена,Австрия
+28,Stockholm,Stockholm,59.3294,18.0686,Sweden,SE,SWE,2121000,Стокгольм,Швеция
+29,Tilburg,Tilburg,51.55,5.0833,Netherlands,NL,NLD,1944000,Тилбург,Нидерланды
+30,Warsaw,Warsaw,52.23,21.0111,Poland,PL,POL,1860000,Варшава,Польша
+31,Valencia,Valencia,39.47,-0.3764,Spain,ES,ESP,1595000,Валенсия,Испания
+32,Sofia,Sofia,42.7,23.33,Bulgaria,BG,BGR,1547000,София,Болгария
+33,Amsterdam,Amsterdam,52.3728,4.8936,Netherlands,NL,NLD,1459000,Амстердам,Нидерланды
+34,Copenhagen,Copenhagen,55.6761,12.5683,Denmark,DK,DNK,1366000,Копенгаген,Дания
+35,Helsinki,Helsinki,60.1708,24.9375,Finland,FI,FIN,1360000,Хельсинки,Финляндия
+36,Prague,Prague,50.0875,14.4214,Czech Republic,CZ,CZE,1357000,Прага,Чешская Республика
+37,Milan,Milan,45.4669,9.19,Italy,IT,ITA,1354000,Милан,Италия
+38,Porto,Porto,41.1621,-8.622,Portugal,PT,PRT,1278000,Порту,Португалия
+39,Dublin,Dublin,53.35,-6.2603,Ireland,IE,IRL,1263000,Дублин,Ирландия
+40,Brussels,Brussels,50.8467,4.3525,Belgium,BE,BEL,1235000,Брюссель,Бельгия
+41,Belgrade,Belgrade,44.82,20.46,Serbia,RS,SRB,1197000,Белград,Сербия
+42,Sevilla,Sevilla,37.39,-5.99,Spain,ES,ESP,1100000,Севилья,Испания
+43,Cologne,Cologne,50.9364,6.9528,Germany,DE,DEU,1084000,Кёльн,Германия
+44,Oslo,Oslo,59.9133,10.7389,Norway,NO,NOR,1064000,Осло,Норвегия
+45,Tokyo,Tokyo,35.6897,139.6922,Japan,JP,JPN,37732000,Токио,Япония
+46,Manila,Manila,14.5958,120.9772,Philippines,PH,PHL,24922000,Манила,Филиппины
+47,Seoul,Seoul,37.56,126.99,"Korea, South",KR,KOR,23016000,Сеул,Южная Корея
+48,Mexico City,Mexico City,19.4333,-99.1333,Mexico,MX,MEX,21804000,Мехико,Мексика
+49,New York,New York,40.6943,-73.9249,United States,US,USA,18908000,Нью-Йорк,США
+50,Bangkok,Bangkok,13.7525,100.4942,Thailand,TH,THA,18007000,Бангкок,Таиланд
+51,Buenos Aires,Buenos Aires,-34.6033,-58.3817,Argentina,AR,ARG,16710000,Буэнос-Айрес,Аргентина
+52,Istanbul,Istanbul,41.0136,28.955,Turkey,TR,TUR,16079000,Стамбул,Турция
+53,Ho Chi Minh City,Ho Chi Minh City,10.7756,106.7019,Vietnam,VN,VNM,15136000,Хошимин,Вьетнам
+54,Ōsaka,Osaka,34.6939,135.5022,Japan,JP,JPN,15126000,Осака,Япония
+55,Los Angeles,Los Angeles,34.1141,-118.4068,United States,US,USA,11922000,Лос-Анджелес,США
+56,Nagoya,Nagoya,35.1833,136.9,Japan,JP,JPN,9197000,Нагоя,Япония
+57,Kuala Lumpur,Kuala Lumpur,3.1478,101.6953,Malaysia,MY,MYS,8911000,Куала Лумпур,Малайзия
+58,Chicago,Chicago,41.8375,-87.6866,United States,US,USA,8497000,Чикаго,США
+59,Hanoi,Hanoi,21.0,105.85,Vietnam,VN,VNM,8246000,Ханой,Вьетнам
+60,Hong Kong,Hong Kong,22.3,114.2,Hong Kong,HK,HKG,7450000,Гонконг,Гонконг Kong
+61,Riyadh,Riyadh,24.6333,46.7167,Saudi Arabia,SA,SAU,7237000,Эр-Рияд,Саудовская Аравия
+62,Miami,Miami,25.784,-80.2101,United States,US,USA,6080000,Майами,США
+63,Houston,Houston,29.786,-95.3885,United States,US,USA,5970000,Хьюстон,США
+64,Dallas,Dallas,32.7935,-96.7667,United States,US,USA,5830000,Даллас,США
+65,Philadelphia,Philadelphia,40.0077,-75.1339,United States,US,USA,5683000,Филадельфия,США
+66,Toronto,Toronto,43.7417,-79.3733,Canada,CA,CAN,5647000,Торонто,Канада
+67,Guadalajara,Guadalajara,20.6767,-103.3475,Mexico,MX,MEX,5525000,Гвадалахара,Мексика
+68,Ankara,Ankara,39.93,32.85,Turkey,TR,TUR,5503000,Анкара,Турция
+69,Monterrey,Monterrey,25.6667,-100.3,Mexico,MX,MEX,5341000,Монтеррей,Мексика
+70,Atlanta,Atlanta,33.7628,-84.422,United States,US,USA,5180000,Атланта,США
+71,Washington,Washington,38.9047,-77.0163,United States,US,USA,5116000,Вашингтон,США
+72,Melbourne,Melbourne,-37.8142,144.9631,Australia,AU,AUS,5031000,Мельбурн,Австралия
+73,Sydney,Sydney,-33.8678,151.21,Australia,AU,AUS,4840000,Сидней,Австралия
+74,Jeddah,Jeddah,21.5433,39.1728,Saudi Arabia,SA,SAU,4697000,Джидда,Саудовская Аравия
+75,Boston,Boston,42.3188,-71.0852,United States,US,USA,4328000,Бостон,США
+76,İzmir,Izmir,38.42,27.14,Turkey,TR,TUR,4320000,Измир,Турция
+77,Phoenix,Phoenix,33.5722,-112.0892,United States,US,USA,4064000,Феникс,США
+78,Yokohama,Yokohama,35.4442,139.6381,Japan,JP,JPN,3757000,Йокогама,Япония
+79,Detroit,Detroit,42.3834,-83.1024,United States,US,USA,3725000,Детройт,США
+80,Montréal,Montreal,45.5089,-73.5617,Canada,CA,CAN,3675000,Монреаль,Канада
+81,Seattle,Seattle,47.6211,-122.3244,United States,US,USA,3561000,Сиэтл,США
+82,Busan,Busan,35.18,129.075,"Korea, South",KR,KOR,3453000,Пусан,Южная Корея
+83,San Francisco,San Francisco,37.7558,-122.4449,United States,US,USA,3364000,Сан-Франциско,США
+84,Dubai,Dubai,25.2631,55.2972,United Arab Emirates,AE,ARE,3331000,Дубай,Объединенные Арабские Эмираты
+85,San Diego,San Diego,32.8313,-117.1222,United States,US,USA,3046000,Сан-Диего,США
+86,Taichung,Taichung,24.1439,120.6794,Taiwan,TW,TWN,3033000,Тайчжун,Тайвань
+87,Quezon City,Quezon City,14.65,121.0475,Philippines,PH,PHL,2960000,Кесон-Сити,Филиппины
+88,Incheon,Incheon,37.4833,126.6333,"Korea, South",KR,KOR,2936000,Инчхон,Южная Корея
+89,Bursa,Bursa,40.1833,29.05,Turkey,TR,TUR,2901000,Бурса,Турция
+90,Minneapolis,Minneapolis,44.9635,-93.2678,United States,US,USA,2892000,Миннеаполис,США
+91,Tampa,Tampa,27.9945,-82.4447,United States,US,USA,2861000,Тампа,США
+92,Brooklyn,Brooklyn,40.6501,-73.9496,United States,US,USA,2736000,Бруклин,США
+93,Denver,Denver,39.762,-104.8758,United States,US,USA,2687000,Денвер,США
+94,Mecca,Mecca,21.4225,39.8233,Saudi Arabia,SA,SAU,2427000,Мекка,Саудовская Аравия
+95,Vancouver,Vancouver,49.25,-123.1,Canada,CA,CAN,2426000,Ванкувер,Канада
+96,Queens,Queens,40.7498,-73.7976,United States,US,USA,2405000,Квинс,США
+97,Daegu,Daegu,35.8717,128.6017,"Korea, South",KR,KOR,2376000,Тэгу,Южная Корея
+98,Brisbane,Brisbane,-27.4678,153.0281,Australia,AU,AUS,2360000,Брисбен,Австралия
+99,Riverside,Riverside,33.9381,-117.3949,United States,US,USA,2332000,Риверсайд,США
+100,Fukuoka,Fukuoka,33.59,130.4017,Japan,JP,JPN,2286000,Фукуока,Япония
+101,Las Vegas,Las Vegas,36.2333,-115.2654,United States,US,USA,2248000,Лас-Вегас,США
+102,Konya,Konya,37.8667,32.4833,Turkey,TR,TUR,2232000,Конья,Турция
+103,Baltimore,Baltimore,39.3051,-76.6144,United States,US,USA,2196000,Балтимор,США
+104,Perth,Perth,-31.9559,115.8606,Australia,AU,AUS,2141000,Перт,Австралия
+105,St. Louis,St. Louis,38.6359,-90.2451,United States,US,USA,2130000,Св. Луис,США
+106,Córdoba,Cordoba,-31.4167,-64.1833,Argentina,AR,ARG,2106000,Кордова,Аргентина
+107,Haiphong,Haiphong,20.8651,106.6838,Vietnam,VN,VNM,2103000,Хайфон,Вьетнам
+108,Portland,Portland,45.5371,-122.65,United States,US,USA,2095000,Портленд,США
+109,San Antonio,San Antonio,29.4632,-98.5238,United States,US,USA,2058000,Сан-Антонио,США
+110,Tijuana,Tijuana,32.525,-117.0333,Mexico,MX,MEX,2002000,Тихуана,Мексика
+111,Sapporo,Sapporo,43.0619,141.3544,Japan,JP,JPN,1959000,Саппоро,Япония
+112,Sacramento,Sacramento,38.5677,-121.4685,United States,US,USA,1957000,Сакраменто,США
+113,Ecatepec,Ecatepec,19.6097,-99.06,Mexico,MX,MEX,1929000,Экатепек,Мексика
+114,Austin,Austin,30.3005,-97.7522,United States,US,USA,1905000,Остин,США
+115,Orlando,Orlando,28.4773,-81.337,United States,US,USA,1882000,Орландо,США
+116,San Jose,San Jose,37.3012,-121.848,United States,US,USA,1771000,Сан-Хосе,США
+117,Pittsburgh,Pittsburgh,40.4397,-79.9763,United States,US,USA,1749000,Питтсбург,США
+118,Indianapolis,Indianapolis,39.7771,-86.1458,United States,US,USA,1729000,Индианаполис,США
+119,Manhattan,Manhattan,40.7834,-73.9662,United States,US,USA,1694000,Манхэттен,США
+120,Cincinnati,Cincinnati,39.1413,-84.506,United States,US,USA,1692000,Цинциннати,США
+121,Kansas City,Kansas City,39.1238,-94.5541,United States,US,USA,1689000,Канзас-Сити,США
+122,Cleveland,Cleveland,41.4764,-81.6805,United States,US,USA,1680000,Кливленд,США
+123,Columbus,Columbus,39.9862,-82.9855,United States,US,USA,1572000,Колумбус,США
+124,Kawasaki,Kawasaki,35.5167,139.7,Japan,JP,JPN,1531000,Кавасаки,Япония
+125,Kōbe,Kobe,34.69,135.1956,Japan,JP,JPN,1521000,Кобе,Япония
+126,Tashkent,Tashkent,41.3111,69.2797,Uzbekistan,UZ,UZB,2956000,Ташкент,Узбекистан
+127,Baku,Baku,40.3953,49.8822,Azerbaijan,AZ,AZE,2300000,Баку,Азербайджан
+128,Bishkek,Bishkek,42.8747,74.6122,Kyrgyzstan,KG,KGZ,1120000,Бишкек,Киргизия
+129,Tbilisi,Tbilisi,41.7225,44.7925,Georgia,GE,GEO,1118000,Тбилиси,Грузия
+130,Yerevan,Yerevan,40.1814,44.5144,Armenia,AM,ARM,1075000,Ереван,Армения
+131,Ashgabat,Ashgabat,37.9375,58.38,Turkmenistan,TM,TKM,1030000,Ашхабад,Туркменистан
+132,Namangan,Namangan,41.0011,71.6683,Uzbekistan,UZ,UZB,626000,Наманган,Узбекистан
+133,Andijon,Andijon,40.7833,72.3333,Uzbekistan,UZ,UZB,547000,Андижан,Узбекистан
+134,Samarkand,Samarkand,39.6547,66.9758,Uzbekistan,UZ,UZB,546000,Самарканд,Узбекистан
+135,Osh,Osh,40.53,72.8,Kyrgyzstan,KG,KGZ,353000,Ош,Киргизия
+136,Moscow,Moscow,55.7558,37.6172,Russia,RU,RUS,17332000,Москва,Россия
+137,Saint Petersburg,Saint Petersburg,59.9375,30.3086,Russia,RU,RUS,5384000,Санкт-Петербург,Россия
+138,Kyiv,Kyiv,50.45,30.5233,Ukraine,UA,UKR,2952000,Киев,Украина
+139,Minsk,Minsk,53.9,27.5667,Belarus,BY,BLR,1995000,Минск,Беларусь
+140,Novosibirsk,Novosibirsk,55.05,82.95,Russia,RU,RUS,1625000,Новосибирск,Россия
+141,Yekaterinburg,Yekaterinburg,56.8356,60.6128,Russia,RU,RUS,1468000,Екатеринбург,Россия
+142,Kharkiv,Kharkiv,49.9925,36.2311,Ukraine,UA,UKR,1421000,Харьков,Украина
+143,Kazan,Kazan,55.7964,49.1089,Russia,RU,RUS,1259000,Казань,Россия
+144,Nizhniy Novgorod,Nizhniy Novgorod,56.3269,44.0075,Russia,RU,RUS,1244000,Нижний Новгород,Россия
+145,Chelyabinsk,Chelyabinsk,55.1547,61.3758,Russia,RU,RUS,1196000,Челябинск,Россия
+146,Omsk,Omsk,54.9833,73.3667,Russia,RU,RUS,1172000,Омск,Россия
+147,Samara,Samara,53.2028,50.1408,Russia,RU,RUS,1169000,Самара,Россия
+148,Rostov,Rostov,47.2225,39.71,Russia,RU,RUS,1137000,Ростов,Россия
+149,Ufa,Ufa,54.7261,55.9475,Russia,RU,RUS,1115000,Уфа,Россия
+150,Jakarta,Jakarta,-6.175,106.8275,Indonesia,ID,IDN,33756000,Джакарта,Индонезия
+151,Delhi,Delhi,28.61,77.23,India,IN,IND,32226000,Дели,Индия
+152,Guangzhou,Guangzhou,23.13,113.26,China,CN,CHN,26940000,Гуанчжоу,Китай
+153,Mumbai,Mumbai,19.0761,72.8775,India,IN,IND,24973000,Мумбаи,Индия
+154,Shanghai,Shanghai,31.2286,121.4747,China,CN,CHN,24073000,Шанхай,Китай
+155,São Paulo,Sao Paulo,-23.55,-46.6333,Brazil,BR,BRA,23086000,Сан-Паулу,Бразилия
+156,Cairo,Cairo,30.0444,31.2358,Egypt,EG,EGY,20296000,Каир,Египет
+157,Temirtaū,Temirtau,50.05,72.95,Kazakhstan,KZ,KAZ,185000,Темиртау,Казахстан
+158,Aqtaū,Aqtau,43.6525,51.1575,Kazakhstan,KZ,KAZ,183000,Актау,Казахстан
+159,Kökshetaū,Kokshetau,53.2833,69.3833,Kazakhstan,KZ,KAZ,165000,Кокшетау,Казахстан
+160,Ekibastuz,Ekibastuz,51.6667,75.3667,Kazakhstan,KZ,KAZ,159000,Экибастуз,Казахстан
+161,Zhangaözen,Zhangaozen,43.3378,52.8553,Kazakhstan,KZ,KAZ,147000,Жангаозен,Казахстан
+162,Atyraū,Atyrau,47.1167,51.8833,Kazakhstan,KZ,KAZ,130000,Атырау,Казахстан
+163,Taldyqorghan,Taldyqorghan,45.0167,78.3667,Kazakhstan,KZ,KAZ,129000,Талдыкорган,Казахстан
+164,Rudnyy,Rudnyy,52.9667,63.1333,Kazakhstan,KZ,KAZ,128000,Рудный,Казахстан
+165,Zhezqazghan,Zhezqazghan,47.7833,67.7,Kazakhstan,KZ,KAZ,90000,Жезказган,Казахстан
+166,Kentaū,Kentau,43.5167,68.5167,Kazakhstan,KZ,KAZ,81000,Кентау,Казахстан
+167,Balqash,Balqash,46.8481,74.995,Kazakhstan,KZ,KAZ,78000,Балхаш,Казахстан
+168,Aqsū,Aqsu,52.0333,76.9167,Kazakhstan,KZ,KAZ,69000,Аксу,Казахстан
+169,Sätbayev,Satbayev,47.9,67.5333,Kazakhstan,KZ,KAZ,61000,Сатбаев,Казахстан
+170,Kapchagay,Kapchagay,43.8833,77.0833,Kazakhstan,KZ,KAZ,61000,Капчагай,Казахстан
+171,Qaskeleng,Qaskeleng,43.2,76.62,Kazakhstan,KZ,KAZ,58000,Каскеленг,Казахстан
+172,Ridder,Ridder,50.35,83.5167,Kazakhstan,KZ,KAZ,49000,Риддер,Казахстан
+173,Bordeaux,Bordeaux,44.84,-0.58,France,FR,FRA,994000,Бордо,Франция
+174,Málaga,Malaga,36.7194,-4.42,Spain,ES,ESP,967000,Малага,Испания
+175,Riga,Riga,56.9489,24.1064,Latvia,LV,LVA,920000,Рига,Латвия
+176,Naples,Naples,40.8333,14.25,Italy,IT,ITA,913000,Неаполь,Италия
+177,Marseille,Marseille,43.2964,5.37,France,FR,FRA,873000,Марсель,Франция
+178,Portsmouth,Portsmouth,50.8058,-1.0872,United Kingdom,GB,GBR,855000,Портсмут,Великобритания
+179,Southampton,Southampton,50.9025,-1.4042,United Kingdom,GB,GBR,855000,Саутгемптон,Великобритания
+180,Turin,Turin,45.0792,7.6761,Italy,IT,ITA,841000,Турин,Италия
+181,Kraków,Krakow,50.0614,19.9372,Poland,PL,POL,804000,Краков,Польша
+182,Thessaloníki,Thessaloniki,40.6403,22.9347,Greece,GR,GRC,802000,Салоники,Греция
+183,Leeds,Leeds,53.7975,-1.5436,United Kingdom,GB,GBR,789000,Лидс,Великобритания
+184,Bilbao,Bilbao,43.2569,-2.9236,Spain,ES,ESP,775000,Бильбао,Испания
+185,Frankfurt,Frankfurt,50.1106,8.6822,Germany,DE,DEU,773000,Франкфурт,Германия
+186,Zagreb,Zagreb,45.8131,15.9775,Croatia,HR,HRV,767000,Загреб,Хорватия
+187,Nottingham,Nottingham,52.9561,-1.1512,United Kingdom,GB,GBR,729000,Ноттингем,Великобритания
+188,Vilnius,Vilnius,54.6872,25.28,Lithuania,LT,LTU,716000,Вильнюс,Литва
+189,Bristol,Bristol,51.4536,-2.5975,United Kingdom,GB,GBR,707000,Бристоль,Великобритания
+190,Chisinau,Chisinau,47.0228,28.8353,Moldova,MD,MDA,702000,Кишинев,Молдова
+191,Zaragoza,Zaragoza,41.65,-0.8833,Spain,ES,ESP,682000,Сарагоса,Испания
+192,Wrocław,Wroclaw,51.11,17.0325,Poland,PL,POL,672000,Вроцлав,Польша
+193,Murcia,Murcia,37.9861,-1.1303,Spain,ES,ESP,672000,Мурсия,Испания
+194,Łódź,Lodz,51.7769,19.4547,Poland,PL,POL,670000,Лодзь,Польша
+195,Rotterdam,Rotterdam,51.92,4.48,Netherlands,NL,NLD,664000,Роттердам,Нидерланды
+196,Las Palmas,Las Palmas,28.1258,-15.4353,Spain,ES,ESP,635000,Лас-Пальмас,Испания
+197,Palermo,Palermo,38.1111,13.3517,Italy,IT,ITA,630000,Палермо,Италия
+198,Düsseldorf,Dusseldorf,51.2333,6.7833,Germany,DE,DEU,629000,Дюссельдорф,Германия
+199,Glasgow,Glasgow,55.8611,-4.25,United Kingdom,GB,GBR,626000,Глазго,Великобритания
+200,Leipzig,Leipzig,51.34,12.375,Germany,DE,DEU,616000,Лейпциг,Германия
+201,Tallinn,Tallinn,59.4372,24.7453,Estonia,EE,EST,614000,Таллинн,Эстония
+202,Gothenburg,Gothenburg,57.7075,11.9675,Sweden,SE,SWE,607000,Гетеборг,Швеция
+203,Dortmund,Dortmund,51.5139,7.4653,Germany,DE,DEU,593000,Дортмунд,Германия
+204,Essen,Essen,51.4508,7.0131,Germany,DE,DEU,584000,Эссен,Германия
+205,Bremen,Bremen,53.0758,8.8072,Germany,DE,DEU,569000,Бремен,Германия
+206,Dresden,Dresden,51.05,13.74,Germany,DE,DEU,563000,Дрезден,Германия
+207,Genoa,Genoa,44.4111,8.9328,Italy,IT,ITA,558000,Генуя,Италия
+208,Palma,Palma,39.5667,2.65,Spain,ES,ESP,550000,Пальма,Испания
+209,Lisbon,Lisbon,38.7253,-9.15,Portugal,PT,PRT,548000,Лиссабон,Португалия
+210,The Hague,The Hague,52.08,4.31,Netherlands,NL,NLD,548000,Гаага,Нидерланды
+211,Manchester,Manchester,53.479,-2.2452,United Kingdom,GB,GBR,547000,Манчестер,Великобритания
+212,Poznań,Poznan,52.4083,16.9336,Poland,PL,POL,546000,Познань,Польша
+213,Hannover,Hannover,52.3667,9.7167,Germany,DE,DEU,545000,Ганновер,Германия
+214,Santa Cruz,Santa Cruz,28.4667,-16.25,Spain,ES,ESP,538000,Санта-Крус,Испания
+215,Antwerp,Antwerp,51.2178,4.4003,Belgium,BE,BEL,536000,Антверпен,Бельгия
+216,Skopje,Skopje,41.9961,21.4317,North Macedonia,MK,MKD,526000,Скопье,Северная Македония
+217,Nuremberg,Nuremberg,49.4539,11.0775,Germany,DE,DEU,523000,Нюрнберг,Германия
+218,Lyon,Lyon,45.76,4.84,France,FR,FRA,522000,Лион,Франция
+219,Sheffield,Sheffield,53.3808,-1.4703,United Kingdom,GB,GBR,518000,Шеффилд,Великобритания
+220,Liverpool,Liverpool,53.4094,-2.9785,United Kingdom,GB,GBR,513000,Ливерпуль,Великобритания
+221,Leicester,Leicester,52.6344,-1.1319,United Kingdom,GB,GBR,508000,Лестер,Великобритания
+222,Toulouse,Toulouse,43.6045,1.444,France,FR,FRA,504000,Тулуза,Франция
+223,Duisburg,Duisburg,51.4347,6.7625,Germany,DE,DEU,502000,Дуйсбург,Германия
+224,Caerdydd,Caerdydd,51.4833,-3.1833,United Kingdom,GB,GBR,488000,Каэрдидд,Великобритания
+225,Edinburgh,Edinburgh,55.9533,-3.1892,United Kingdom,GB,GBR,488000,Эдинбург,Великобритания
+226,Gdańsk,Gdansk,54.3475,18.6453,Poland,PL,POL,486000,Гданьск,Польша
+227,Valletta,Valletta,35.8983,14.5125,Malta,MT,MLT,480000,Валлетта,Мальта
+228,Bratislava,Bratislava,48.1439,17.1097,Slovakia,SK,SVK,475000,Братислава,Словакия
+229,Worthing,Worthing,50.8147,-0.3714,United Kingdom,GB,GBR,474000,Уортинг,Великобритания
+230,Piraeus,Piraeus,37.943,23.6469,Greece,GR,GRC,448000,Пирей,Греция
+231,Zürich,Zurich,47.3744,8.5411,Switzerland,CH,CHE,447000,Цюрих,Швейцария
+232,Aves,Aves,41.44,-8.3,Portugal,PT,PRT,425000,Авес,Португалия
+233,Sarajevo,Sarajevo,43.8564,18.4131,Bosnia and Herzegovina,BA,BIH,419000,Сараево,Босния и Герцеговина
+234,Tirana,Tirana,41.3289,19.8178,Albania,AL,ALB,418000,Тирана,Албания
+235,Szczecin,Szczecin,53.4325,14.5481,Poland,PL,POL,396000,Щецин,Польша
+236,Brno,Brno,49.1925,16.6083,Czech Republic,CZ,CZE,396000,Брно,Чешская Республика
+237,Kaunas,Kaunas,54.8972,23.8861,Lithuania,LT,LTU,393000,Каунас,Литва
+238,Bologna,Bologna,44.4939,11.3428,Italy,IT,ITA,387000,Болонья,Италия
+239,Novi Sad,Novi Sad,45.2542,19.8425,Serbia,RS,SRB,380000,Новый Сад,Сербия
+240,Sintra,Sintra,38.7992,-9.3883,Portugal,PT,PRT,377000,Синтра,Португалия
+241,Stoke-on-Trent,Stoke-on-Trent,53.0,-2.1833,United Kingdom,GB,GBR,372000,Сток-он-Трент,Великобритания
+242,Gwangju,Gwangju,35.1653,126.8486,"Korea, South",KR,KOR,1490000,Кванджу,Южная Корея
+243,Abu Dhabi,Abu Dhabi,24.4667,54.3667,United Arab Emirates,AE,ARE,1483000,Абу-Даби,Объединенные Арабские Эмираты
+244,Daejeon,Daejeon,36.35,127.385,"Korea, South",KR,KOR,1475000,Тэджон,Южная Корея
+245,Bronx,Bronx,40.8501,-73.8662,United States,US,USA,1472000,Бронкс,США
+246,Kyōto,Kyoto,35.0117,135.7683,Japan,JP,JPN,1463000,Киото,Япония
+247,Virginia Beach,Virginia Beach,36.7335,-76.0435,United States,US,USA,1443000,Вирджиния Пляж,США
+248,Charlotte,Charlotte,35.2083,-80.8303,United States,US,USA,1427000,Шарлотта,США
+249,Medina,Medina,24.47,39.61,Saudi Arabia,SA,SAU,1411000,Медина,Саудовская Аравия
+250,Tel Aviv-Yafo,Tel Aviv-Yafo,32.08,34.78,Israel,IL,ISR,1388000,Тель-Авив-Яффо,Израиль
+251,Calgary,Calgary,51.05,-114.0667,Canada,CA,CAN,1306000,Калгари,Канада
+252,Adelaide,Adelaide,-34.9275,138.6,Australia,AU,AUS,1295000,Аделаида,Австралия
+253,Milwaukee,Milwaukee,43.0642,-87.9675,United States,US,USA,1290000,Милуоки,США
+254,Providence,Providence,41.823,-71.4187,United States,US,USA,1290000,Провиденс,США
+255,Jacksonville,Jacksonville,30.3322,-81.6749,United States,US,USA,1288000,Джексонвилль,США
+256,Sharjah,Sharjah,25.3575,55.3908,United Arab Emirates,AE,ARE,1247000,Шарджа,Объединенные Арабские Эмираты
+257,Cần Thơ,Can Tho,10.0333,105.7833,Vietnam,VN,VNM,1237000,Кан Тхо,Вьетнам
+258,Suwon,Suwon,37.2667,127.0167,"Korea, South",KR,KOR,1234000,Сувон,Южная Корея
+259,Chiang Mai,Chiang Mai,18.7953,98.9986,Thailand,TH,THA,1198000,Чиангмай,Таиланд
+260,Doha,Doha,25.2867,51.5333,Qatar,QA,QAT,1186000,Доха,Катар
+261,Nashville,Nashville,36.1715,-86.7842,United States,US,USA,1177000,Нэшвилл,США
+262,Salt Lake City,Salt Lake City,40.7776,-111.9311,United States,US,USA,1173000,Солт-Лейк-Сити,США
+263,Raleigh,Raleigh,35.8324,-78.6429,United States,US,USA,1163000,Роли,США
+264,Edmonton,Edmonton,53.5344,-113.4903,Canada,CA,CAN,1151000,Эдмонтон,Канада
+265,Ulsan,Ulsan,35.55,129.3167,"Korea, South",KR,KOR,1150000,Ульсан,Южная Корея
+266,Biên Hòa,Bien Hoa,10.95,106.8167,Vietnam,VN,VNM,1104000,Бьен Хоа,Вьетнам
+267,Tongjin,Tongjin,37.2333,127.2,"Korea, South",KR,KOR,1076000,Тунцзин,Южная Корея
+268,Richmond,Richmond,37.5295,-77.4756,United States,US,USA,1073000,Ричмонд,США
+269,Ottawa,Ottawa,45.4247,-75.695,Canada,CA,CAN,1068000,Оттава,Канада
+270,Goyang,Goyang,37.65,126.8,"Korea, South",KR,KOR,1061000,Гоян,Южная Корея
+271,Memphis,Memphis,35.1087,-89.9663,United States,US,USA,1037000,Мемфис,США
+272,Thủ Đức,Thu Duc,10.8266,106.7609,Vietnam,VN,VNM,1013000,Ту Дык,Вьетнам
+273,Changwon,Changwon,35.2708,128.6631,"Korea, South",KR,KOR,1009000,Чханвон,Южная Корея
+274,Quảng Hà,Quang Ha,15.9333,108.2667,Vietnam,VN,VNM,1000000,Куанг Ха,Вьетнам
+275,Oklahoma City,Oklahoma City,35.4676,-97.5136,United States,US,USA,998000,Оклахома Сити,США
+276,Hartford,Hartford,41.7661,-72.6834,United States,US,USA,974000,Хартфорд,США
+277,Hwasu-dong,Hwasu-dong,37.1997,126.8314,"Korea, South",KR,KOR,941000,Хвасу-дон,Южная Корея
+278,Jerusalem,Jerusalem,31.7789,35.2256,Israel,IL,ISR,936000,Иерусалим,Израиль
+279,Sŏngnam,Songnam,37.4333,127.15,"Korea, South",KR,KOR,918000,Сонгнам,Южная Корея
+280,Ad Dammām,Ad Dammam,26.4333,50.1,Saudi Arabia,SA,SAU,903000,Ад Даммам,Саудовская Аравия
+281,Cheongju,Cheongju,36.6333,127.4833,"Korea, South",KR,KOR,852000,Чхонджу,Южная Корея
+282,Bucheon,Bucheon,37.5,126.7833,"Korea, South",KR,KOR,781000,Пучхон,Южная Корея
+283,Al ‘Ayn,Al `Ayn,24.2075,55.7447,United Arab Emirates,AE,ARE,766000,Аль Айн,Объединенные Арабские Эмираты
+284,Winnipeg,Winnipeg,49.8844,-97.1464,Canada,CA,CAN,758000,Виннипег,Канада
+285,Quebec City,Quebec City,46.8139,-71.2081,Canada,CA,CAN,733000,Квебек Сити,Канада
+286,Huế,Hue,16.4667,107.5792,Vietnam,VN,VNM,652000,Хюэ,Вьетнам
+287,Tân An,Tan An,10.905,106.6994,Vietnam,VN,VNM,618000,Тан Ан,Вьетнам
+288,Ar Rayyān,Ar Rayyan,25.25,51.4,Qatar,QA,QAT,605000,Ар Райян,Катар
+289,Haifa,Haifa,32.8192,34.9992,Israel,IL,ISR,600000,Хайфа,Израиль
+290,Bắc Ninh,Bac Ninh,21.1833,106.05,Vietnam,VN,VNM,520000,Бак Нинь,Вьетнам
+291,‘Ajmān,`Ajman,25.4136,55.4456,United Arab Emirates,AE,ARE,490000,Аджман,Объединенные Арабские Эмираты
+292,Nakhon Ratchasima,Nakhon Ratchasima,14.975,102.1,Thailand,TH,THA,466000,Накхонратчасима,Таиланд
+293,Khon Kaen,Khon Kaen,16.4333,102.8333,Thailand,TH,THA,412000,Хон Каен,Таиланд
+294,Hat Yai,Hat Yai,7.0167,100.4667,Thailand,TH,THA,404000,Хат Яй,Таиланд
+295,Sumqayıt,Sumqayit,40.5897,49.6686,Azerbaijan,AZ,AZE,341000,Сумгаит,Азербайджан
+296,Gəncə,Ganca,40.6828,46.3606,Azerbaijan,AZ,AZE,331000,Ганча,Азербайджан
+297,Nukus,Nukus,42.4667,59.6,Uzbekistan,UZ,UZB,319000,Нукус,Узбекистан
+298,Farg‘ona,Farg`ona,40.3864,71.7864,Uzbekistan,UZ,UZB,288000,Фаргона,Узбекистан
+299,Bukhara,Bukhara,39.7667,64.4231,Uzbekistan,UZ,UZB,280000,Бухара,Узбекистан
+300,Qarshi,Qarshi,38.8667,65.8,Uzbekistan,UZ,UZB,274000,Карши,Узбекистан
+301,Qo‘qon,Qo`qon,40.5286,70.9425,Uzbekistan,UZ,UZB,259000,Кукон,Узбекистан
+302,Türkmenabat,Turkmenabat,39.0833,63.5667,Turkmenistan,TM,TKM,256000,Туркменабат,Туркменистан
+303,Daşoguz,Dasoguz,41.8333,59.9667,Turkmenistan,TM,TKM,227000,Дашогуз,Туркменистан
+304,Marg‘ilon,Marg`ilon,40.4711,71.7247,Uzbekistan,UZ,UZB,215000,Маргилон,Узбекистан
+305,Batumi,Batumi,41.6458,41.6417,Georgia,GE,GEO,169000,Батуми,Грузия
+306,Jizzax,Jizzax,40.1158,67.8422,Uzbekistan,UZ,UZB,163000,Джизак,Узбекистан
+307,Chirchiq,Chirchiq,41.4667,69.5833,Uzbekistan,UZ,UZB,159000,Чирчик,Узбекистан
+308,Urganch,Urganch,41.55,60.6333,Uzbekistan,UZ,UZB,150000,Урганч,Узбекистан
+309,Kutaisi,Kutaisi,42.25,42.7,Georgia,GE,GEO,147000,Кутаиси,Грузия
+310,Olmaliq,Olmaliq,40.85,69.6,Uzbekistan,UZ,UZB,141000,Олмалик,Узбекистан
+311,Termiz,Termiz,37.2167,67.2833,Uzbekistan,UZ,UZB,136000,Термиз,Узбекистан
+312,Ağcabədi,Agcabadi,40.0528,47.4614,Azerbaijan,AZ,AZE,136000,Агкабади,Азербайджан
+313,Navoiy,Navoiy,40.0844,65.3792,Uzbekistan,UZ,UZB,134000,Навоий,Узбекистан
+314,Rustavi,Rustavi,41.5436,45.0117,Georgia,GE,GEO,132000,Рустави,Грузия
+315,Gyumri,Gyumri,40.7894,43.8475,Armenia,AM,ARM,121000,Гюмри,Армения
+316,Vanadzor,Vanadzor,40.8128,44.4883,Armenia,AM,ARM,90000,Ванадзор,Армения
+317,Jalal-Abad,Jalal-Abad,40.9333,73.0,Kyrgyzstan,KG,KGZ,89000,Джалал-Абад,Киргизия
+318,Ejmiatsin,Ejmiatsin,40.1728,44.2925,Armenia,AM,ARM,57000,Эчмиадзин,Армения
+319,Krasnoyarsk,Krasnoyarsk,56.0089,92.8719,Russia,RU,RUS,1083000,Красноярск,Россия
+320,Voronezh,Voronezh,51.6717,39.2106,Russia,RU,RUS,1051000,Воронеж,Россия
+321,Perm,Perm,58.0,56.3167,Russia,RU,RUS,1048000,Пермь,Россия
+322,Odesa,Odesa,46.4775,30.7326,Ukraine,UA,UKR,1010000,Одесса,Украина
+323,Volgograd,Volgograd,48.7086,44.5147,Russia,RU,RUS,1004000,Волгоград,Россия
+324,Dnipro,Dnipro,48.4675,35.04,Ukraine,UA,UKR,968000,Днепр,Украина
+325,Krasnodar,Krasnodar,45.0333,38.9667,Russia,RU,RUS,948000,Краснодар,Россия
+326,Donetsk,Donetsk,48.0028,37.8053,Ukraine,UA,UKR,901000,Донецк,Украина
+327,Tyumen,Tyumen,57.15,65.5333,Russia,RU,RUS,855000,Тюмень,Россия
+328,Saratov,Saratov,51.5333,46.0167,Russia,RU,RUS,845000,Саратов,Россия
+329,Lviv,Lviv,49.8425,24.0322,Ukraine,UA,UKR,717000,Львов,Украина
+330,Zaporizhzhia,Zaporizhzhia,47.85,35.1175,Ukraine,UA,UKR,710000,Запорожье,Украина
+331,Tolyatti,Tolyatti,53.5089,49.4222,Russia,RU,RUS,685000,Тольятти,Россия
+332,Makhachkala,Makhachkala,42.9667,47.4833,Russia,RU,RUS,662000,Махачкала,Россия
+333,Bazal’tove,Bazal'tove,50.6765,26.16,Ukraine,UA,UKR,625000,Базальтово,Украина
+334,Kryvyi Rih,Kryvyi Rih,47.91,33.39,Ukraine,UA,UKR,603000,Кривой Рог,Украина
+335,Homyel’,Homyel',52.4453,30.9842,Belarus,BY,BLR,501000,Гомель,Беларусь
+336,Sevastopol,Sevastopol,44.605,33.5225,Ukraine,UA,UKR,485000,Севастополь,Украина
+337,Vitsyebsk,Vitsyebsk,55.1917,30.2056,Belarus,BY,BLR,359000,Витебск,Беларусь
+338,Beijing,Beijing,39.9067,116.3975,China,CN,CHN,18522000,Пекин,Китай
+339,Kolkāta,Kolkata,22.5675,88.37,India,IN,IND,18502000,Калькутта,Индия
+340,Shenzhen,Shenzhen,22.5415,114.0596,China,CN,CHN,17619000,Шэньчжэнь,Китай
+341,Karachi,Karachi,24.86,67.01,Pakistan,PK,PAK,15738000,Карачи,Пакистан
+342,Bangalore,Bangalore,12.9789,77.5917,India,IN,IND,15386000,Бангалор,Индия
+343,Chengdu,Chengdu,30.66,104.0633,China,CN,CHN,14645000,Чэнду,Китай
+344,Tehran,Tehran,35.6892,51.3889,Iran,IR,IRN,14148000,Тегеран,Иран
+345,Rio de Janeiro,Rio de Janeiro,-22.9111,-43.2056,Brazil,BR,BRA,12592000,Рио-де-Жанейро,Бразилия
+346,Chennai,Chennai,13.0825,80.275,India,IN,IND,12395000,Ченнаи,Индия
+347,Xi’an,Xi'an,34.2611,108.9422,China,CN,CHN,12328000,Сиань,Китай
+348,Lahore,Lahore,31.5497,74.3436,Pakistan,PK,PAK,12306000,Лахор,Пакистан
+349,Chongqing,Chongqing,29.5637,106.5504,China,CN,CHN,12135000,Чунцин,Китай
+350,Baoding,Baoding,38.874,115.464,China,CN,CHN,11544000,Баодин,Китай
+351,Linyi,Linyi,35.1038,118.3564,China,CN,CHN,11018000,Линьи,Китай
+352,Dongguan,Dongguan,23.021,113.752,China,CN,CHN,10646000,Дунгуань,Китай
+353,Hyderābād,Hyderabad,17.3617,78.4747,India,IN,IND,10494000,Хайдарабад,Индия
+354,Johannesburg,Johannesburg,-26.2044,28.0456,South Africa,ZA,ZAF,8500000,Йоханнесбург,Южная Африка
+355,Pune,Pune,18.5203,73.8567,India,IN,IND,8231000,Пуна,Индия
+356,Ahmedabad,Ahmedabad,23.0225,72.5714,India,IN,IND,8009000,Ахмадабад,Индия
+357,Bogotá,Bogota,4.7111,-74.0722,Colombia,CO,COL,7968000,Богота,Колумбия
+358,Surabaya,Surabaya,-7.2458,112.7378,Indonesia,ID,IDN,6998000,Сурабая,Индонезия
+359,Giza,Giza,29.987,31.2118,Egypt,EG,EGY,5598000,Гиза,Египет
+360,Belo Horizonte,Belo Horizonte,-19.9167,-43.9333,Brazil,BR,BRA,5328000,Белу-Оризонти,Бразилия
+361,Alexandria,Alexandria,31.1975,29.8925,Egypt,EG,EGY,4870000,Александрия,Египет
+362,Cape Town,Cape Town,-33.9253,18.4239,South Africa,ZA,ZAF,4770000,Кейптаун,Южная Африка
+363,Fortaleza,Fortaleza,-3.7275,-38.5275,Brazil,BR,BRA,4167000,Форталеза,Бразилия
+364,Medan,Medan,3.5894,98.6739,Indonesia,ID,IDN,3632000,Медан,Индонезия
+365,Mashhad,Mashhad,36.3264,59.5433,Iran,IR,IRN,3372000,Мешхед,Иран
+366,Brasília,Brasilia,-15.7939,-47.8828,Brazil,BR,BRA,2817000,Бразилиа,Бразилия
+367,Medellín,Medellin,6.2308,-75.5906,Colombia,CO,COL,2529000,Медельин,Колумбия
+368,Dhaka,Dhaka,23.7639,90.3889,Bangladesh,BD,BGD,18627000,Дакка,Бангладеш
+369,Lagos,Lagos,6.455,3.3841,Nigeria,NG,NGA,16637000,Лагос,Нигерия
+370,Kinshasa,Kinshasa,-4.3219,15.3119,Congo (Kinshasa),CD,COD,12836000,Киншаса,Конго (Киншаса)
+371,Lima,Lima,-12.06,-77.0375,Peru,PE,PER,10320000,Лима,Перу
+372,Luanda,Luanda,-8.8383,13.2344,Angola,AO,AGO,9051000,Луанда,Ангола
+373,Dar es Salaam,Dar es Salaam,-6.8161,39.2803,Tanzania,TZ,TZA,7962000,Дар-эс-Салам,Танзания
+374,Khartoum,Khartoum,15.6,32.5,Sudan,SD,SDN,7869000,Хартум,Судан
+375,Santiago,Santiago,-33.4372,-70.6506,Chile,CL,CHL,7171000,Сантьяго,Чили
+376,Baghdad,Baghdad,33.3153,44.3661,Iraq,IQ,IRQ,6183000,Багдад,Ирак
+377,Douala,Douala,4.05,9.7,Cameroon,CM,CMR,5768000,Дуала,Камерун
+378,Nairobi,Nairobi,-1.2864,36.8172,Kenya,KE,KEN,5545000,Найроби,Кения
+379,Rangoon,Rangoon,16.795,96.16,Burma,MM,MMR,5209000,Рангун,Бирма
+380,Abidjan,Abidjan,5.3167,-4.0333,Côte d’Ivoire,CI,CIV,4980000,Абиджан,Кот-д’Ивуар
+381,Kabul,Kabul,34.5253,69.1783,Afghanistan,AF,AFG,4273000,Кабул,Афганистан
+382,Bamako,Bamako,12.6392,-8.0028,Mali,ML,MLI,4227000,Бамако,Мали
+383,Casablanca,Casablanca,33.5333,-7.5833,Morocco,MA,MAR,3499000,Касабланка,Марокко
+384,Kumasi,Kumasi,6.7,-1.625,Ghana,GH,GHA,3490000,Кумаси,Гана
+385,Algiers,Algiers,36.7539,3.0589,Algeria,DZ,DZA,3415000,Алжир,Алжир
+386,Santa Cruz de la Sierra,Santa Cruz de la Sierra,-17.7892,-63.1975,Bolivia,BO,BOL,3151000,Санта-Крус-де-ла Сьерра,Боливия
+387,Addis Ababa,Addis Ababa,9.03,38.74,Ethiopia,ET,ETH,3041000,Аддис-Абеба,Эфиопия
+388,Guatemala City,Guatemala City,14.6133,-90.5353,Guatemala,GT,GTM,3014000,Гватемала,Гватемала
+389,Pyongyang,Pyongyang,39.0167,125.7475,"Korea, North",KP,PRK,2863000,Пхеньян,Северная Корея
+390,Guayaquil,Guayaquil,-2.19,-79.8875,Ecuador,EC,ECU,2650000,Гуаякиль,Эквадор
+391,Mogadishu,Mogadishu,2.0392,45.3419,Somalia,SO,SOM,2610000,Могадишо,Сомали
+392,Damascus,Damascus,33.5131,36.2919,Syria,SY,SYR,2584000,Дамаск,Сирия
+393,Antananarivo,Antananarivo,-18.91,47.525,Madagascar,MG,MDG,2300000,Антананариву,Мадагаскар
+394,Caracas,Caracas,10.4806,-66.9036,Venezuela,VE,VEN,2245000,Каракас,Венесуэла
+395,Havana,Havana,23.1367,-82.3589,Cuba,CU,CUB,2089000,Гавана,Куба
+396,Santiago,Santiago,19.4572,-70.6889,Dominican Republic,DO,DOM,1343000,Сантьяго,Доминиканская Республика
+397,Cotonou,Cotonou,6.3667,2.4333,Benin,BJ,BEN,679000,Котону,Бенин

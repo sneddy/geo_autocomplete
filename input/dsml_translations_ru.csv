@@ -1,0 +1,399 @@
+iso2,city_ascii,city_ru,country_ru
+KZ,Almaty,Алматы,Казахстан
+KZ,Shymkent,Шымкент,Казахстан
+KZ,Astana,Астана,Казахстан
+KZ,Qaraghandy,Караганда,Казахстан
+KZ,Oskemen,Усть-Каменогорск,Казахстан
+KZ,Aqtobe,Актобе,Казахстан
+KZ,Taraz,Тараз,Казахстан
+KZ,Semey,Семей,Казахстан
+KZ,Pavlodar,Павлодар,Казахстан
+KZ,Turkistan,Туркестан,Казахстан
+KZ,Qyzylorda,Кызылорда,Казахстан
+KZ,Oral,Оральный,Казахстан
+KZ,Qostanay,Костанай,Казахстан
+KZ,Petropavl,Петропавль,Казахстан
+GB,London,Лондон,Великобритания
+FR,Paris,Париж,Франция
+ES,Madrid,Мадрид,Испания
+DE,Berlin,Берлин,Германия
+ES,Barcelona,Барселона,Испания
+GR,Athens,Афины,Греция
+HU,Budapest,Будапешт,Венгрия
+GB,Birmingham,Бирмингем,Великобритания
+DE,Stuttgart,Штутгарт,Германия
+IT,Rome,Рим,Италия
+DE,Munich,Мюнхен,Германия
+DE,Hamburg,Гамбург,Германия
+RO,Bucharest,Бухарест,Румыния
+AT,Vienna,Вена,Австрия
+SE,Stockholm,Стокгольм,Швеция
+NL,Tilburg,Тилбург,Нидерланды
+PL,Warsaw,Варшава,Польша
+ES,Valencia,Валенсия,Испания
+BG,Sofia,София,Болгария
+NL,Amsterdam,Амстердам,Нидерланды
+DK,Copenhagen,Копенгаген,Дания
+FI,Helsinki,Хельсинки,Финляндия
+CZ,Prague,Прага,Чешская Республика
+IT,Milan,Милан,Италия
+PT,Porto,Порту,Португалия
+IE,Dublin,Дублин,Ирландия
+BE,Brussels,Брюссель,Бельгия
+RS,Belgrade,Белград,Сербия
+ES,Sevilla,Севилья,Испания
+DE,Cologne,Кёльн,Германия
+NO,Oslo,Осло,Норвегия
+JP,Tokyo,Токио,Япония
+PH,Manila,Манила,Филиппины
+KR,Seoul,Сеул,Южная Корея
+MX,Mexico City,Мехико,Мексика
+US,New York,Нью-Йорк,США
+TH,Bangkok,Бангкок,Таиланд
+AR,Buenos Aires,Буэнос-Айрес,Аргентина
+TR,Istanbul,Стамбул,Турция
+VN,Ho Chi Minh City,Хошимин,Вьетнам
+JP,Osaka,Осака,Япония
+US,Los Angeles,Лос-Анджелес,США
+JP,Nagoya,Нагоя,Япония
+MY,Kuala Lumpur,Куала Лумпур,Малайзия
+US,Chicago,Чикаго,США
+VN,Hanoi,Ханой,Вьетнам
+HK,Hong Kong,Гонконг,Гонконг Kong
+SA,Riyadh,Эр-Рияд,Саудовская Аравия
+US,Miami,Майами,США
+US,Houston,Хьюстон,США
+US,Dallas,Даллас,США
+US,Philadelphia,Филадельфия,США
+CA,Toronto,Торонто,Канада
+MX,Guadalajara,Гвадалахара,Мексика
+TR,Ankara,Анкара,Турция
+MX,Monterrey,Монтеррей,Мексика
+US,Atlanta,Атланта,США
+US,Washington,Вашингтон,США
+AU,Melbourne,Мельбурн,Австралия
+AU,Sydney,Сидней,Австралия
+SA,Jeddah,Джидда,Саудовская Аравия
+US,Boston,Бостон,США
+TR,Izmir,Измир,Турция
+US,Phoenix,Феникс,США
+JP,Yokohama,Йокогама,Япония
+US,Detroit,Детройт,США
+CA,Montreal,Монреаль,Канада
+US,Seattle,Сиэтл,США
+KR,Busan,Пусан,Южная Корея
+US,San Francisco,Сан-Франциско,США
+AE,Dubai,Дубай,Объединенные Арабские Эмираты
+US,San Diego,Сан-Диего,США
+TW,Taichung,Тайчжун,Тайвань
+PH,Quezon City,Кесон-Сити,Филиппины
+KR,Incheon,Инчхон,Южная Корея
+TR,Bursa,Бурса,Турция
+US,Minneapolis,Миннеаполис,США
+US,Tampa,Тампа,США
+US,Brooklyn,Бруклин,США
+US,Denver,Денвер,США
+SA,Mecca,Мекка,Саудовская Аравия
+CA,Vancouver,Ванкувер,Канада
+US,Queens,Квинс,США
+KR,Daegu,Тэгу,Южная Корея
+AU,Brisbane,Брисбен,Австралия
+US,Riverside,Риверсайд,США
+JP,Fukuoka,Фукуока,Япония
+US,Las Vegas,Лас-Вегас,США
+TR,Konya,Конья,Турция
+US,Baltimore,Балтимор,США
+AU,Perth,Перт,Австралия
+US,St. Louis,Св. Луис,США
+AR,Cordoba,Кордова,Аргентина
+VN,Haiphong,Хайфон,Вьетнам
+US,Portland,Портленд,США
+US,San Antonio,Сан-Антонио,США
+MX,Tijuana,Тихуана,Мексика
+JP,Sapporo,Саппоро,Япония
+US,Sacramento,Сакраменто,США
+MX,Ecatepec,Экатепек,Мексика
+US,Austin,Остин,США
+US,Orlando,Орландо,США
+US,San Jose,Сан-Хосе,США
+US,Pittsburgh,Питтсбург,США
+US,Indianapolis,Индианаполис,США
+US,Manhattan,Манхэттен,США
+US,Cincinnati,Цинциннати,США
+US,Kansas City,Канзас-Сити,США
+US,Cleveland,Кливленд,США
+US,Columbus,Колумбус,США
+JP,Kawasaki,Кавасаки,Япония
+JP,Kobe,Кобе,Япония
+UZ,Tashkent,Ташкент,Узбекистан
+AZ,Baku,Баку,Азербайджан
+KG,Bishkek,Бишкек,Киргизия
+GE,Tbilisi,Тбилиси,Грузия
+AM,Yerevan,Ереван,Армения
+TM,Ashgabat,Ашхабад,Туркменистан
+UZ,Namangan,Наманган,Узбекистан
+UZ,Andijon,Андижан,Узбекистан
+UZ,Samarkand,Самарканд,Узбекистан
+KG,Osh,Ош,Киргизия
+RU,Moscow,Москва,Россия
+RU,Saint Petersburg,Санкт-Петербург,Россия
+UA,Kyiv,Киев,Украина
+BY,Minsk,Минск,Беларусь
+RU,Novosibirsk,Новосибирск,Россия
+RU,Yekaterinburg,Екатеринбург,Россия
+UA,Kharkiv,Харьков,Украина
+RU,Kazan,Казань,Россия
+RU,Nizhniy Novgorod,Нижний Новгород,Россия
+RU,Chelyabinsk,Челябинск,Россия
+RU,Omsk,Омск,Россия
+RU,Samara,Самара,Россия
+RU,Rostov,Ростов,Россия
+RU,Ufa,Уфа,Россия
+ID,Jakarta,Джакарта,Индонезия
+IN,Delhi,Дели,Индия
+CN,Guangzhou,Гуанчжоу,Китай
+IN,Mumbai,Мумбаи,Индия
+CN,Shanghai,Шанхай,Китай
+BR,Sao Paulo,Сан-Паулу,Бразилия
+EG,Cairo,Каир,Египет
+KZ,Temirtau,Темиртау,Казахстан
+KZ,Aqtau,Актау,Казахстан
+KZ,Kokshetau,Кокшетау,Казахстан
+KZ,Ekibastuz,Экибастуз,Казахстан
+KZ,Zhangaozen,Жангаозен,Казахстан
+KZ,Atyrau,Атырау,Казахстан
+KZ,Taldyqorghan,Талдыкорган,Казахстан
+KZ,Rudnyy,Рудный,Казахстан
+KZ,Zhezqazghan,Жезказган,Казахстан
+KZ,Kentau,Кентау,Казахстан
+KZ,Balqash,Балхаш,Казахстан
+KZ,Aqsu,Аксу,Казахстан
+KZ,Satbayev,Сатбаев,Казахстан
+KZ,Kapchagay,Капчагай,Казахстан
+KZ,Qaskeleng,Каскеленг,Казахстан
+KZ,Ridder,Риддер,Казахстан
+FR,Bordeaux,Бордо,Франция
+ES,Malaga,Малага,Испания
+LV,Riga,Рига,Латвия
+IT,Naples,Неаполь,Италия
+FR,Marseille,Марсель,Франция
+GB,Portsmouth,Портсмут,Великобритания
+GB,Southampton,Саутгемптон,Великобритания
+IT,Turin,Турин,Италия
+PL,Krakow,Краков,Польша
+GR,Thessaloniki,Салоники,Греция
+GB,Leeds,Лидс,Великобритания
+ES,Bilbao,Бильбао,Испания
+DE,Frankfurt,Франкфурт,Германия
+HR,Zagreb,Загреб,Хорватия
+GB,Nottingham,Ноттингем,Великобритания
+LT,Vilnius,Вильнюс,Литва
+GB,Bristol,Бристоль,Великобритания
+MD,Chisinau,Кишинев,Молдова
+ES,Zaragoza,Сарагоса,Испания
+PL,Wroclaw,Вроцлав,Польша
+ES,Murcia,Мурсия,Испания
+PL,Lodz,Лодзь,Польша
+NL,Rotterdam,Роттердам,Нидерланды
+ES,Las Palmas,Лас-Пальмас,Испания
+IT,Palermo,Палермо,Италия
+DE,Dusseldorf,Дюссельдорф,Германия
+GB,Glasgow,Глазго,Великобритания
+DE,Leipzig,Лейпциг,Германия
+EE,Tallinn,Таллинн,Эстония
+SE,Gothenburg,Гетеборг,Швеция
+DE,Dortmund,Дортмунд,Германия
+DE,Essen,Эссен,Германия
+DE,Bremen,Бремен,Германия
+DE,Dresden,Дрезден,Германия
+IT,Genoa,Генуя,Италия
+ES,Palma,Пальма,Испания
+PT,Lisbon,Лиссабон,Португалия
+NL,The Hague,Гаага,Нидерланды
+GB,Manchester,Манчестер,Великобритания
+PL,Poznan,Познань,Польша
+DE,Hannover,Ганновер,Германия
+ES,Santa Cruz,Санта-Крус,Испания
+BE,Antwerp,Антверпен,Бельгия
+MK,Skopje,Скопье,Северная Македония
+DE,Nuremberg,Нюрнберг,Германия
+FR,Lyon,Лион,Франция
+GB,Sheffield,Шеффилд,Великобритания
+GB,Liverpool,Ливерпуль,Великобритания
+GB,Leicester,Лестер,Великобритания
+FR,Toulouse,Тулуза,Франция
+DE,Duisburg,Дуйсбург,Германия
+GB,Caerdydd,Каэрдидд,Великобритания
+GB,Edinburgh,Эдинбург,Великобритания
+PL,Gdansk,Гданьск,Польша
+MT,Valletta,Валлетта,Мальта
+SK,Bratislava,Братислава,Словакия
+GB,Worthing,Уортинг,Великобритания
+GR,Piraeus,Пирей,Греция
+CH,Zurich,Цюрих,Швейцария
+PT,Aves,Авес,Португалия
+BA,Sarajevo,Сараево,Босния и Герцеговина
+AL,Tirana,Тирана,Албания
+PL,Szczecin,Щецин,Польша
+CZ,Brno,Брно,Чешская Республика
+LT,Kaunas,Каунас,Литва
+IT,Bologna,Болонья,Италия
+RS,Novi Sad,Новый Сад,Сербия
+PT,Sintra,Синтра,Португалия
+GB,Stoke-on-Trent,Сток-он-Трент,Великобритания
+KR,Gwangju,Кванджу,Южная Корея
+AE,Abu Dhabi,Абу-Даби,Объединенные Арабские Эмираты
+KR,Daejeon,Тэджон,Южная Корея
+US,Bronx,Бронкс,США
+JP,Kyoto,Киото,Япония
+US,Virginia Beach,Вирджиния Пляж,США
+US,Charlotte,Шарлотта,США
+SA,Medina,Медина,Саудовская Аравия
+IL,Tel Aviv-Yafo,Тель-Авив-Яффо,Израиль
+CA,Calgary,Калгари,Канада
+AU,Adelaide,Аделаида,Австралия
+US,Milwaukee,Милуоки,США
+US,Providence,Провиденс,США
+US,Jacksonville,Джексонвилль,США
+AE,Sharjah,Шарджа,Объединенные Арабские Эмираты
+VN,Can Tho,Кан Тхо,Вьетнам
+KR,Suwon,Сувон,Южная Корея
+TH,Chiang Mai,Чиангмай,Таиланд
+QA,Doha,Доха,Катар
+US,Nashville,Нэшвилл,США
+US,Salt Lake City,Солт-Лейк-Сити,США
+US,Raleigh,Роли,США
+CA,Edmonton,Эдмонтон,Канада
+KR,Ulsan,Ульсан,Южная Корея
+VN,Bien Hoa,Бьен Хоа,Вьетнам
+KR,Tongjin,Тунцзин,Южная Корея
+US,Richmond,Ричмонд,США
+CA,Ottawa,Оттава,Канада
+KR,Goyang,Гоян,Южная Корея
+US,Memphis,Мемфис,США
+VN,Thu Duc,Ту Дык,Вьетнам
+KR,Changwon,Чханвон,Южная Корея
+VN,Quang Ha,Куанг Ха,Вьетнам
+US,Oklahoma City,Оклахома Сити,США
+US,Hartford,Хартфорд,США
+KR,Hwasu-dong,Хвасу-дон,Южная Корея
+IL,Jerusalem,Иерусалим,Израиль
+KR,Songnam,Сонгнам,Южная Корея
+SA,Ad Dammam,Ад Даммам,Саудовская Аравия
+KR,Cheongju,Чхонджу,Южная Корея
+KR,Bucheon,Пучхон,Южная Корея
+AE,Al `Ayn,Аль Айн,Объединенные Арабские Эмираты
+CA,Winnipeg,Виннипег,Канада
+CA,Quebec City,Квебек Сити,Канада
+VN,Hue,Хюэ,Вьетнам
+VN,Tan An,Тан Ан,Вьетнам
+QA,Ar Rayyan,Ар Райян,Катар
+IL,Haifa,Хайфа,Израиль
+VN,Bac Ninh,Бак Нинь,Вьетнам
+AE,`Ajman,Аджман,Объединенные Арабские Эмираты
+TH,Nakhon Ratchasima,Накхонратчасима,Таиланд
+TH,Khon Kaen,Хон Каен,Таиланд
+TH,Hat Yai,Хат Яй,Таиланд
+AZ,Sumqayit,Сумгаит,Азербайджан
+AZ,Ganca,Ганча,Азербайджан
+UZ,Nukus,Нукус,Узбекистан
+UZ,Farg`ona,Фаргона,Узбекистан
+UZ,Bukhara,Бухара,Узбекистан
+UZ,Qarshi,Карши,Узбекистан
+UZ,Qo`qon,Кукон,Узбекистан
+TM,Turkmenabat,Туркменабат,Туркменистан
+TM,Dasoguz,Дашогуз,Туркменистан
+UZ,Marg`ilon,Маргилон,Узбекистан
+GE,Batumi,Батуми,Грузия
+UZ,Jizzax,Джизак,Узбекистан
+UZ,Chirchiq,Чирчик,Узбекистан
+UZ,Urganch,Урганч,Узбекистан
+GE,Kutaisi,Кутаиси,Грузия
+UZ,Olmaliq,Олмалик,Узбекистан
+UZ,Termiz,Термиз,Узбекистан
+AZ,Agcabadi,Агкабади,Азербайджан
+UZ,Navoiy,Навоий,Узбекистан
+GE,Rustavi,Рустави,Грузия
+AM,Gyumri,Гюмри,Армения
+AM,Vanadzor,Ванадзор,Армения
+KG,Jalal-Abad,Джалал-Абад,Киргизия
+AM,Ejmiatsin,Эчмиадзин,Армения
+RU,Krasnoyarsk,Красноярск,Россия
+RU,Voronezh,Воронеж,Россия
+RU,Perm,Пермь,Россия
+UA,Odesa,Одесса,Украина
+RU,Volgograd,Волгоград,Россия
+UA,Dnipro,Днепр,Украина
+RU,Krasnodar,Краснодар,Россия
+UA,Donetsk,Донецк,Украина
+RU,Tyumen,Тюмень,Россия
+RU,Saratov,Саратов,Россия
+UA,Lviv,Львов,Украина
+UA,Zaporizhzhia,Запорожье,Украина
+RU,Tolyatti,Тольятти,Россия
+RU,Makhachkala,Махачкала,Россия
+UA,Bazal'tove,Базальтово,Украина
+UA,Kryvyi Rih,Кривой Рог,Украина
+BY,Homyel',Гомель,Беларусь
+UA,Sevastopol,Севастополь,Украина
+BY,Vitsyebsk,Витебск,Беларусь
+CN,Beijing,Пекин,Китай
+IN,Kolkata,Калькутта,Индия
+CN,Shenzhen,Шэньчжэнь,Китай
+PK,Karachi,Карачи,Пакистан
+IN,Bangalore,Бангалор,Индия
+CN,Chengdu,Чэнду,Китай
+IR,Tehran,Тегеран,Иран
+BR,Rio de Janeiro,Рио-де-Жанейро,Бразилия
+IN,Chennai,Ченнаи,Индия
+CN,Xi'an,Сиань,Китай
+PK,Lahore,Лахор,Пакистан
+CN,Chongqing,Чунцин,Китай
+CN,Baoding,Баодин,Китай
+CN,Linyi,Линьи,Китай
+CN,Dongguan,Дунгуань,Китай
+IN,Hyderabad,Хайдарабад,Индия
+ZA,Johannesburg,Йоханнесбург,Южная Африка
+IN,Pune,Пуна,Индия
+IN,Ahmedabad,Ахмадабад,Индия
+CO,Bogota,Богота,Колумбия
+ID,Surabaya,Сурабая,Индонезия
+EG,Giza,Гиза,Египет
+BR,Belo Horizonte,Белу-Оризонти,Бразилия
+EG,Alexandria,Александрия,Египет
+ZA,Cape Town,Кейптаун,Южная Африка
+BR,Fortaleza,Форталеза,Бразилия
+ID,Medan,Медан,Индонезия
+IR,Mashhad,Мешхед,Иран
+BR,Brasilia,Бразилиа,Бразилия
+CO,Medellin,Медельин,Колумбия
+BD,Dhaka,Дакка,Бангладеш
+NG,Lagos,Лагос,Нигерия
+CD,Kinshasa,Киншаса,Конго (Киншаса)
+PE,Lima,Лима,Перу
+AO,Luanda,Луанда,Ангола
+TZ,Dar es Salaam,Дар-эс-Салам,Танзания
+SD,Khartoum,Хартум,Судан
+CL,Santiago,Сантьяго,Чили
+IQ,Baghdad,Багдад,Ирак
+CM,Douala,Дуала,Камерун
+KE,Nairobi,Найроби,Кения
+MM,Rangoon,Рангун,Бирма
+CI,Abidjan,Абиджан,Кот-д’Ивуар
+AF,Kabul,Кабул,Афганистан
+ML,Bamako,Бамако,Мали
+MA,Casablanca,Касабланка,Марокко
+GH,Kumasi,Кумаси,Гана
+DZ,Algiers,Алжир,Алжир
+BO,Santa Cruz de la Sierra,Санта-Крус-де-ла Сьерра,Боливия
+ET,Addis Ababa,Аддис-Абеба,Эфиопия
+GT,Guatemala City,Гватемала,Гватемала
+KP,Pyongyang,Пхеньян,Северная Корея
+EC,Guayaquil,Гуаякиль,Эквадор
+SO,Mogadishu,Могадишо,Сомали
+SY,Damascus,Дамаск,Сирия
+MG,Antananarivo,Антананариву,Мадагаскар
+VE,Caracas,Каракас,Венесуэла
+CU,Havana,Гавана,Куба
+DO,Santiago,Сантьяго,Доминиканская Республика
+BJ,Cotonou,Котону,Бенин

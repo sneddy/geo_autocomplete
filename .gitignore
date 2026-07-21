@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+.DS_Store
+
+# Historical input that is unrelated to the city-index build.
+input/world_universities_and_domains.json
