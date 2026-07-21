@@ -8,3 +8,7 @@ build/
 
 # Historical input that is unrelated to the city-index build.
 input/world_universities_and_domains.json
+
+# ROR releases are downloaded locally and exceed GitHub's per-file size limit.
+input/ror_data/*
+!input/ror_data/README.md

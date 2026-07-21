@@ -15,3 +15,16 @@ deterministic derivatives of that checked-in snapshot.
 
 The MIT License in `LICENSE` applies to project code only and does not replace
 the license of bundled or derived data.
+
+## Research Organization Registry
+
+`dist/hspace/universities_index.csv` is derived from Research Organization
+Registry release v2.10, published on 2026-07-20:
+
+- Release: https://zenodo.org/records/21458494
+- Project: https://ror.org/
+- Data documentation: https://ror.readme.io/docs/data-dump
+
+ROR IDs and metadata are provided under the Creative Commons CC0 1.0 Universal
+Public Domain Dedication. Location data in ROR comes from GeoNames and is
+licensed under Creative Commons Attribution 4.0.

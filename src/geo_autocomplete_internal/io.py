@@ -4,7 +4,8 @@ import csv
 from pathlib import Path
 from typing import Iterable, Sequence
 
-from .models import City, TranslationCatalog
+from .models import City, ResearchOrganization, TranslationCatalog
+from .universities import normalize_search_text, university_search_domains
 
 
 DSML_COLUMNS = (
@@ -38,6 +39,29 @@ HSPACE_COLUMNS = (
     "lng",
     "population",
     "source_id",
+)
+
+UNIVERSITY_COLUMNS = (
+    "priority",
+    "ranking_score",
+    "ranking_reasons",
+    "ror_id",
+    "display_name",
+    "search_names",
+    "acronyms",
+    "aliases",
+    "labels",
+    "country",
+    "country_code",
+    "city",
+    "admin_name",
+    "geonames_id",
+    "lat",
+    "lng",
+    "established",
+    "types",
+    "domains",
+    "website",
 )
 
 
@@ -142,3 +166,148 @@ def write_city_index(
         writer.writeheader()
         for city in cities:
             writer.writerow({column: _serialize(city, column) for column in columns})
+
+
+def _serialize_organization(
+    organization: ResearchOrganization, column: str
+) -> str | int | float:
+    if column == "display_name":
+        return organization.display_name
+    if column == "search_names":
+        return "|".join(organization.all_names)
+    if column == "acronyms":
+        return "|".join(organization.names_of_type("acronym"))
+    if column == "aliases":
+        return "|".join(organization.names_of_type("alias"))
+    if column == "labels":
+        return "|".join(organization.names_of_type("label"))
+    if column in {"ranking_reasons", "types", "domains"}:
+        return "|".join(getattr(organization, column))
+    value = getattr(organization, column)
+    return "" if value is None else value
+
+
+def write_university_index(
+    organizations: Sequence[ResearchOrganization], path: str | Path
+) -> None:
+    destination = Path(path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    with destination.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.DictWriter(
+            stream,
+            fieldnames=UNIVERSITY_COLUMNS,
+            lineterminator="\n",
+        )
+        writer.writeheader()
+        for organization in organizations:
+            writer.writerow(
+                {
+                    column: _serialize_organization(organization, column)
+                    for column in UNIVERSITY_COLUMNS
+                }
+            )
+
+
+def _sql_text(value: str) -> str:
+    return "'" + value.replace("'", "''") + "'"
+
+
+def _sql_array(values: Iterable[str]) -> str:
+    resolved = tuple(values)
+    if not resolved:
+        return "array[]::text[]"
+    return "array[" + ",".join(_sql_text(value) for value in resolved) + "]::text[]"
+
+
+def write_university_seed_sql(
+    organizations: Sequence[ResearchOrganization],
+    path: str | Path,
+    *,
+    source_release: str,
+    batch_size: int = 500,
+) -> None:
+    """Write deterministic, batched inserts for public.university_index."""
+
+    if batch_size < 1:
+        raise ValueError("batch_size must be positive")
+    destination = Path(path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    columns = (
+        "ror_id",
+        "priority",
+        "ranking_score",
+        "display_name",
+        "normalized_name",
+        "search_names",
+        "acronyms",
+        "aliases",
+        "labels",
+        "domains",
+        "search_text",
+        "country",
+        "country_code",
+        "city",
+        "admin_name",
+        "geonames_id",
+        "lat",
+        "lng",
+        "established",
+        "organization_types",
+        "website",
+        "source_release",
+    )
+
+    with destination.open("w", encoding="utf-8", newline="\n") as stream:
+        stream.write(
+            "-- Generated from the canonical ROR JSON dump. Do not edit manually.\n"
+            f"-- Source release: {source_release}\n\n"
+            "begin;\n\n"
+            "delete from public.university_index;\n\n"
+        )
+        for offset in range(0, len(organizations), batch_size):
+            batch = organizations[offset : offset + batch_size]
+            stream.write(
+                "insert into public.university_index (\n  "
+                + ", ".join(columns)
+                + "\n) values\n"
+            )
+            rows: list[str] = []
+            for organization in batch:
+                search_names = tuple(
+                    dict.fromkeys(
+                        normalize_search_text(name)
+                        for name in organization.all_names
+                        if normalize_search_text(name)
+                    )
+                )
+                normalized_domains = university_search_domains(organization)
+                search_text = " ".join(
+                    dict.fromkeys((*search_names, *normalized_domains))
+                )
+                values = (
+                    _sql_text(organization.ror_id),
+                    str(organization.priority),
+                    str(organization.ranking_score),
+                    _sql_text(organization.display_name),
+                    _sql_text(normalize_search_text(organization.display_name)),
+                    _sql_array(search_names),
+                    _sql_array(organization.names_of_type("acronym")),
+                    _sql_array(organization.names_of_type("alias")),
+                    _sql_array(organization.names_of_type("label")),
+                    _sql_array(normalized_domains),
+                    _sql_text(search_text),
+                    _sql_text(organization.country),
+                    _sql_text(organization.country_code),
+                    _sql_text(organization.city),
+                    _sql_text(organization.admin_name),
+                    str(organization.geonames_id),
+                    repr(organization.lat),
+                    repr(organization.lng),
+                    "null" if organization.established is None else str(organization.established),
+                    _sql_array(organization.types),
+                    _sql_text(organization.website),
+                    _sql_text(source_release),
+                )
+                rows.append("  (" + ", ".join(values) + ")")
+            stream.write(",\n".join(rows) + ";\n\n")
+        stream.write("commit;\n")

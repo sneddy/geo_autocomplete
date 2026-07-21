@@ -10,8 +10,11 @@ from .io import (
     load_world_cities,
     merge_translation_catalogs,
     write_city_index,
+    write_university_index,
 )
-from .models import City
+from .models import City, ResearchOrganization
+from .ror import load_ror_organizations
+from .universities import build_university_index
 
 
 def build_dsml_files(
@@ -52,3 +55,13 @@ def build_hspace_file(
     translated = apply_translations(ranked, catalog)
     write_city_index(translated, output_path, profile="hspace")
     return translated
+
+
+def build_university_file(
+    source_path: str | Path,
+    output_path: str | Path,
+) -> list[ResearchOrganization]:
+    organizations = load_ror_organizations(source_path)
+    ranked = build_university_index(organizations)
+    write_university_index(ranked, output_path)
+    return ranked

@@ -1,0 +1,204 @@
+[
+  {
+    "id": "https://ror.org/0258gkt32",
+    "status": "active",
+    "types": ["education"],
+    "established": 2019,
+    "domains": [],
+    "links": [
+      {"type": "website", "value": "https://mbzuai.ac.ae/"}
+    ],
+    "locations": [
+      {
+        "geonames_id": 292968,
+        "geonames_details": {
+          "country_code": "AE",
+          "country_name": "United Arab Emirates",
+          "country_subdivision_name": "Abu Dhabi",
+          "lat": 24.45118,
+          "lng": 54.39696,
+          "name": "Abu Dhabi"
+        }
+      }
+    ],
+    "names": [
+      {"value": "MBZUAI", "types": ["acronym"], "lang": null},
+      {
+        "value": "Mohamed bin Zayed University of Artificial Intelligence",
+        "types": ["ror_display", "label"],
+        "lang": "en"
+      },
+      {
+        "value": "جامعة محمد بن زايد للذكاء الاصطناعي",
+        "types": ["label"],
+        "lang": "ar"
+      }
+    ]
+  },
+  {
+    "id": "https://ror.org/052bx8q98",
+    "status": "active",
+    "types": ["education", "funder"],
+    "established": 2010,
+    "domains": [],
+    "links": [
+      {"type": "website", "value": "https://nu.edu.kz/"}
+    ],
+    "locations": [
+      {
+        "geonames_id": 1526273,
+        "geonames_details": {
+          "country_code": "KZ",
+          "country_name": "Kazakhstan",
+          "country_subdivision_name": "Astana",
+          "lat": 51.1801,
+          "lng": 71.44598,
+          "name": "Astana"
+        }
+      }
+    ],
+    "names": [
+      {"value": "NU", "types": ["acronym"], "lang": null},
+      {
+        "value": "Nazarbayev University",
+        "types": ["ror_display", "label"],
+        "lang": "en"
+      },
+      {
+        "value": "Назарбаев Университет",
+        "types": ["label"],
+        "lang": "ru"
+      },
+      {
+        "value": "Назарбаев Университеті",
+        "types": ["label"],
+        "lang": "kk"
+      }
+    ]
+  },
+  {
+    "id": "https://ror.org/00f54p054",
+    "status": "active",
+    "types": ["education"],
+    "established": 1885,
+    "domains": ["stanford.edu"],
+    "links": [
+      {"type": "website", "value": "https://www.stanford.edu/"}
+    ],
+    "locations": [
+      {
+        "geonames_id": 5398563,
+        "geonames_details": {
+          "country_code": "US",
+          "country_name": "United States",
+          "country_subdivision_name": "California",
+          "lat": 37.42411,
+          "lng": -122.16608,
+          "name": "Stanford"
+        }
+      }
+    ],
+    "names": [
+      {
+        "value": "Stanford University",
+        "types": ["ror_display", "label"],
+        "lang": "en"
+      }
+    ]
+  },
+  {
+    "id": "https://ror.org/04a4keh50",
+    "status": "active",
+    "types": ["education"],
+    "established": 2008,
+    "domains": ["nis.edu.kz"],
+    "links": [
+      {"type": "website", "value": "https://www.nis.edu.kz"}
+    ],
+    "locations": [
+      {
+        "geonames_id": 1526273,
+        "geonames_details": {
+          "country_code": "KZ",
+          "country_name": "Kazakhstan",
+          "country_subdivision_name": "Astana",
+          "lat": 51.1801,
+          "lng": 71.44598,
+          "name": "Astana"
+        }
+      }
+    ],
+    "names": [
+      {"value": "NIS", "types": ["acronym"], "lang": "en"},
+      {
+        "value": "AEO “Nazarbayev Intellectual Schools”",
+        "types": ["alias"],
+        "lang": "en"
+      },
+      {
+        "value": "Nazarbayev Intellectual Schools",
+        "types": ["ror_display", "label"],
+        "lang": "en"
+      },
+      {
+        "value": "Назарбаев Интеллектуальные школы",
+        "types": ["label"],
+        "lang": "ru"
+      }
+    ]
+  },
+  {
+    "id": "https://ror.org/01inactive0",
+    "status": "inactive",
+    "types": ["education"],
+    "domains": [],
+    "links": [],
+    "locations": [
+      {
+        "geonames_id": 2643743,
+        "geonames_details": {
+          "country_code": "GB",
+          "country_name": "United Kingdom",
+          "country_subdivision_name": "England",
+          "lat": 51.50853,
+          "lng": -0.12574,
+          "name": "London"
+        }
+      }
+    ],
+    "names": [
+      {
+        "value": "Inactive University",
+        "types": ["ror_display", "label"],
+        "lang": "en"
+      }
+    ]
+  },
+  {
+    "id": "https://ror.org/05example00",
+    "status": "active",
+    "types": ["company"],
+    "domains": ["example.ai"],
+    "links": [],
+    "locations": [
+      {
+        "geonames_id": 5391959,
+        "geonames_details": {
+          "country_code": "US",
+          "country_name": "United States",
+          "country_subdivision_name": "California",
+          "lat": 37.77493,
+          "lng": -122.41942,
+          "name": "San Francisco"
+        }
+      }
+    ],
+    "names": [
+      {
+        "value": "Example AI Company",
+        "types": ["ror_display", "label"],
+        "lang": "en"
+      }
+    ]
+  }
+]

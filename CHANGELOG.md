@@ -2,6 +2,27 @@
 
 All notable changes to this project are documented in this file.
 
+## [1.1.0] - 2026-07-21
+
+### Added
+
+- A ROR-only HSpace university autocomplete profile with 24,725 active
+  educational organizations from release v2.10.
+- Dependency-free streaming of the canonical ROR JSON dump.
+- Stable ROR IDs, multilingual names, acronyms, domains, websites, and GeoNames
+  locations in the generated university artifact.
+- Reusable university query matching with exact, prefix, token-prefix, and
+  substring tiers.
+- Deterministic batched PostgreSQL seed generation for the shared
+  `public.university_index` table.
+- Regression coverage for Nazarbayev University, MBZUAI, source filtering, and
+  the complete pinned ROR release.
+
+### Changed
+
+- Expanded the package scope from city-only indexes to geographic and
+  affiliation autocomplete data.
+
 ## [1.0.0] - 2026-07-21
 
 ### Added
@@ -23,3 +44,4 @@ All notable changes to this project are documented in this file.
 - Retained `demo.ipynb` as historical documentation only.
 
 [1.0.0]: https://github.com/sneddy/geo_autocomplete/releases/tag/v1.0.0
+[1.1.0]: https://github.com/sneddy/geo_autocomplete/compare/v1.0.0...v1.1.0

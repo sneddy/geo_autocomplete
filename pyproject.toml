@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geo-autocomplete-index"
-version = "1.0.0"
-description = "Reproducible DSML and HSpace city autocomplete indexes"
+version = "1.1.0"
+description = "Reproducible DSML and HSpace geographic and affiliation indexes"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-keywords = ["autocomplete", "cities", "geodata", "ranking"]
+keywords = ["autocomplete", "cities", "universities", "ror", "geodata", "ranking"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",

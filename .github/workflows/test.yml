@@ -35,3 +35,10 @@ jobs:
         run: |
           python scripts/build_dsml_index.py --output /tmp/dsml.csv
           python scripts/build_hspace_index.py --output /tmp/hspace.csv
+          python scripts/build_university_index.py \
+            --source tests/fixtures/ror_sample.json \
+            --output /tmp/universities.csv
+          python scripts/build_university_seed_sql.py \
+            --source tests/fixtures/ror_sample.json \
+            --source-release ror-test \
+            --output /tmp/universities.sql
