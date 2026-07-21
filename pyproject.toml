@@ -3,13 +3,13 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "geo-autocomplete-index"
-version = "1.1.0"
-description = "Reproducible DSML and HSpace geographic and affiliation indexes"
+name = "stateless-autocomplete"
+version = "2.0.0"
+description = "Deterministic stateless autocomplete with reproducible city and ROR adapters"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-keywords = ["autocomplete", "cities", "universities", "ror", "geodata", "ranking"]
+keywords = ["autocomplete", "search", "ranking", "cities", "universities", "ror"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",

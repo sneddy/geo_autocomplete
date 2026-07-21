@@ -13,7 +13,7 @@ from geo_autocomplete_internal.cli import build_university_file
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Build the ROR-based HSpace university autocomplete index."
+        description="Build the shared ROR university autocomplete index."
     )
     parser.add_argument(
         "--source",
@@ -38,7 +38,7 @@ def main() -> None:
             "See input/ror_data/README.md for download instructions."
         )
     organizations = build_university_file(args.source, args.output)
-    print(f"Wrote {len(organizations)} HSpace universities to {args.output}")
+    print(f"Wrote {len(organizations)} university rows to {args.output}")
 
 
 if __name__ == "__main__":

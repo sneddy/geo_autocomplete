@@ -1,27 +1,24 @@
 from __future__ import annotations
 
-import re
-import unicodedata
 from collections.abc import Iterable
-from dataclasses import dataclass
 from urllib.parse import urlparse
+
+from stateless_autocomplete import (
+    AutocompleteIndex,
+    SearchDocument,
+    SearchTerm,
+    normalize_text,
+)
 
 from .dsml import EUROPEAN_COUNTRIES
 from .hspace import COUNTRY_BONUSES, MIDDLE_EAST_COUNTRIES, RESEARCH_HUBS
 from .models import ResearchOrganization
 
 
-_NON_WORD = re.compile(r"[^\w]+", flags=re.UNICODE)
-
-
 def normalize_search_text(value: str) -> str:
-    decomposed = unicodedata.normalize("NFKD", value.casefold())
-    without_marks = "".join(
-        character
-        for character in decomposed
-        if not unicodedata.combining(character)
-    )
-    return " ".join(_NON_WORD.sub(" ", without_marks).split())
+    """Backward-compatible domain alias for the public normalizer."""
+
+    return normalize_text(value)
 
 
 def _country_bonus(organization: ResearchOrganization) -> float:
@@ -86,7 +83,7 @@ def _score(organization: ResearchOrganization) -> tuple[float, tuple[str, ...]]:
 def build_university_index(
     organizations: Iterable[ResearchOrganization],
 ) -> list[ResearchOrganization]:
-    """Rank active educational ROR organizations for the HSpace index."""
+    """Rank active educational ROR organizations for the shared index."""
 
     scored = [
         (organization, *_score(organization))
@@ -120,75 +117,42 @@ def university_search_domains(
     return tuple(dict.fromkeys(normalize_search_text(term) for term in terms))
 
 
-@dataclass(frozen=True, slots=True)
-class _SearchEntry:
-    organization: ResearchOrganization
-    terms: tuple[str, ...]
-    name_words: tuple[tuple[int, str], ...]
-
-
-def _search_entry(organization: ResearchOrganization) -> _SearchEntry:
-    names = tuple(normalize_search_text(name) for name in organization.all_names)
-    return _SearchEntry(
-        organization=organization,
-        terms=names + university_search_domains(organization),
-        name_words=tuple(
-            (word_index, word)
-            for name in names
-            for word_index, word in enumerate(name.split())
+def _search_document(
+    organization: ResearchOrganization,
+) -> SearchDocument[ResearchOrganization]:
+    return SearchDocument(
+        key=organization.ror_id,
+        label=organization.display_name,
+        payload=organization,
+        terms=(
+            *(
+                SearchTerm(name, token_prefix=True)
+                for name in organization.all_names
+            ),
+            *(
+                SearchTerm(domain, token_prefix=False)
+                for domain in university_search_domains(organization)
+            ),
         ),
+        priority=(
+            organization.priority
+            if organization.priority is not None
+            else 10**9
+        ),
+        score=organization.ranking_score or 0.0,
     )
-
-
-def _match_key(entry: _SearchEntry, query: str) -> tuple[int, int, int] | None:
-    matches: list[tuple[int, int, int]] = []
-    for term in entry.terms:
-        if query == term:
-            matches.append((0, 0, len(term)))
-        elif term.startswith(query):
-            matches.append((1, len(term) - len(query), len(term)))
-        elif query in term:
-            matches.append((3, term.index(query), len(term)))
-    for word_index, word in entry.name_words:
-        if word.startswith(query):
-            matches.append((2, word_index, len(word) - len(query)))
-    return min(matches) if matches else None
 
 
 class UniversitySearchIndex:
     """Precomputed in-memory search terms for interactive autocomplete."""
 
     def __init__(self, organizations: Iterable[ResearchOrganization]) -> None:
-        self._entries = tuple(_search_entry(item) for item in organizations)
+        self._index = AutocompleteIndex(
+            _search_document(item) for item in organizations
+        )
 
     def search(self, query: str, *, limit: int = 10) -> list[ResearchOrganization]:
-        if limit < 0:
-            raise ValueError("limit must be non-negative")
-        normalized_query = normalize_search_text(query)
-        candidates: list[
-            tuple[tuple[int, int, int], ResearchOrganization]
-        ] = []
-        for entry in self._entries:
-            if not normalized_query:
-                match_key = (0, 0, 0)
-            else:
-                match_key = _match_key(entry, normalized_query)
-                if match_key is None:
-                    continue
-            candidates.append((match_key, entry.organization))
-
-        candidates.sort(
-            key=lambda item: (
-                item[0][0],
-                item[1].priority if item[1].priority is not None else 10**9,
-                item[0][1],
-                item[0][2],
-                -(item[1].ranking_score or 0.0),
-                item[1].display_name.casefold(),
-                item[1].ror_id,
-            )
-        )
-        return [organization for _, organization in candidates[:limit]]
+        return self._index.search(query, limit=limit)
 
 
 def search_universities(

@@ -1,26 +1,123 @@
-# Geo Autocomplete Index
+# Stateless Autocomplete
 
 [![Tests](https://github.com/sneddy/geo_autocomplete/actions/workflows/test.yml/badge.svg)](https://github.com/sneddy/geo_autocomplete/actions/workflows/test.yml)
 
-Reproducible city and university indexes for the DSML and HSpace autocomplete
-experiences. The city profiles share a versioned world-cities snapshot, while
-the university profile uses the open Research Organization Registry (ROR):
+Build deterministic autocomplete indexes from versioned datasets, then search
+them without a provider call, model request, or hidden ranking service.
 
-- **DSML** preserves the exact 398-city legacy selection and ordering.
-- **HSpace** provides broad global coverage with a research-oriented ranking.
-- **HSpace Universities** provides stable IDs and multilingual search names for
-  active educational research organizations.
+The repository has two layers:
 
-The production pipelines are deterministic, offline, and dependency-free. The
-legacy notebook remains available for historical context, but it is not part of
-the canonical build path.
+- `stateless_autocomplete` is a public, dependency-free Python core for any
+  caller-owned records;
+- the city and ROR pipelines are reproducible domain adapters used by DSML.kz
+  and HSpace.
+
+The core owns normalization, match tiers, stable tie-breaking, and explainable
+result metadata. Applications keep control of data selection, static priors,
+storage, HTTP transport, caching, authentication, and UI state.
+
+## Why this repository is useful
+
+Autocomplete often starts as an ad hoc array filter and later becomes an
+opaque hosted dependency. This project provides a small middle path:
+
+```text
+versioned source data
+        ↓
+deterministic profile and static priority
+        ↓
+portable CSV or SQL seed
+        ↓
+pure in-memory search or a bounded database RPC
+        ↓
+application-owned API and combobox
+```
+
+`stateless` means the query algorithm performs no network or storage access.
+It searches an immutable set of documents supplied by the caller. The included
+PostgreSQL recipe moves that same deterministic index into application-owned
+storage; it does not turn this package into a hosted service.
 
 ## Quick start
 
 Python 3.10 or newer is required.
 
-Download the pinned ROR release as described in `input/ror_data/README.md`
-before building the university index.
+```bash
+python3 -m pip install --editable .
+python3 examples/custom_catalog.py ICML
+```
+
+Use the public API with any payload type:
+
+```python
+from dataclasses import dataclass
+
+from stateless_autocomplete import (
+    AutocompleteIndex,
+    SearchDocument,
+    SearchTerm,
+)
+
+
+@dataclass(frozen=True)
+class Item:
+    item_id: str
+    name: str
+    aliases: tuple[str, ...]
+    priority: int
+
+
+items = (
+    Item("conf-icml", "International Conference on Machine Learning", ("ICML",), 0),
+    Item("lab-mila", "Mila - Quebec AI Institute", ("Mila",), 1),
+)
+
+index = AutocompleteIndex(
+    SearchDocument(
+        key=item.item_id,
+        label=item.name,
+        payload=item,
+        terms=tuple(SearchTerm(value) for value in (item.name, *item.aliases)),
+        priority=item.priority,
+    )
+    for item in items
+)
+
+suggestions = index.search("ICML", limit=10)
+```
+
+Call `index.match(...)` when the application also needs the winning match tier
+and matched spelling for diagnostics or an explanation UI.
+
+## Ranking contract
+
+The public engine normalizes case, accents, whitespace, and punctuation, then
+orders candidates by four explicit text tiers:
+
+1. exact term;
+2. full-term prefix;
+3. token prefix;
+4. substring.
+
+Text quality always wins. Caller-provided priority and score only break ties
+within the same text tier, followed by stable label and key ordering. Token
+prefixes can be disabled for structured values such as domains.
+
+There is deliberately no typo model, embedding service, popularity tracking,
+or implicit personalization. Those can be application signals, but they should
+not be hidden inside a supposedly reusable index.
+
+## Included reproducible profiles
+
+| Profile | Output | Current coverage | Purpose |
+| --- | --- | ---: | --- |
+| DSML cities | `dist/dsml/cities_index_with_ru.csv` | 398 | Exact legacy compatibility |
+| HSpace cities | `dist/hspace/cities_index.csv` | 11,364 | Broad global research coverage |
+| ROR universities | `dist/hspace/universities_index.csv` | 24,725 | Active educational organizations |
+
+Download the pinned ROR release as described in
+[`input/ror_data/README.md`](input/ror_data/README.md) before rebuilding the
+university artifact.
 
 ```bash
 python3 scripts/build_dsml_index.py
@@ -28,194 +125,147 @@ python3 scripts/build_hspace_index.py
 python3 scripts/build_university_index.py
 ```
 
-The generated files are written to:
-
-```text
-dist/dsml/cities_index_with_ru.csv
-dist/hspace/cities_index.csv
-dist/hspace/universities_index.csv
-```
-
-Use `--source`, `--translations`, and `--output` to override the default paths.
-Run each command with `--help` for the complete interface.
-
-To load the same university data into PostgreSQL, generate a deterministic SQL
-seed after creating the `public.university_index` table:
-
-```bash
-python3 scripts/build_university_seed_sql.py \
-  --output /path/to/migrations/university_index_ror_v210_seed.sql
-```
-
-The generated seed uses batches of 500 rows, records the source release on
-every row, and can be reproduced independently by DSML and HSpace.
-
-## Profiles
+All commands accept explicit input and output paths. Run them with `--help` for
+the complete interface.
 
 ### DSML compatibility profile
 
-The DSML builder reproduces the behavior encoded in the original notebook:
+The DSML builder reproduces the original notebook behavior:
 
-1. Select fixed numbers of cities from the legacy country groups.
-2. Split each group around its configured population threshold.
-3. Append one major city from 30 otherwise unrepresented countries.
-4. Round population values down to the nearest thousand.
-5. Preserve the legacy Russian labels and final priority order.
+1. select fixed numbers of cities from the legacy country groups;
+2. split groups around their configured population thresholds;
+3. add one major city from 30 otherwise unrepresented countries;
+4. round populations down to the nearest thousand;
+5. preserve Russian labels and final priority order.
 
-The checked-in regression test compares all 398 generated records with the
-existing `cities_index_with_ru.csv` artifact.
-
-Russian labels are stored in `input/dsml_translations_ru.csv`; the production
-build never calls an online translation service. Legacy translations remain
-unchanged so that the DSML output is stable. HSpace applies the small correction
-catalog in `input/hspace_translation_overrides_ru.csv` on top of that data.
+The regression suite compares every generated row with the historical artifact.
+See [`examples/dsml/`](examples/dsml/) for the complete consumer recipe.
 
 ### HSpace research profile
 
-The default HSpace profile includes:
-
-- every city with at least 50,000 residents;
-- every national capital;
-- configured AI and research hubs regardless of population.
-
-With the current source snapshot, this produces 11,364 records across 240
-countries and territories. The output retains the administrative region so
-clients can distinguish names such as Cambridge or Princeton.
-
-Change the population threshold when building:
+The default HSpace city profile includes every city with at least 50,000
+residents, every national capital, and configured AI/research hubs regardless
+of population.
 
 ```bash
 python3 scripts/build_hspace_index.py --min-population 100000
-```
-
-Export all 47,868 source records, including records without population data:
-
-```bash
 python3 scripts/build_hspace_index.py --all
 ```
 
-The HSpace score combines:
+Static city priority combines logarithmic population, a small focus-market
+prior, research-hub bonuses, and a national-capital bonus. These are explicit
+product priors, not claims about measured researcher counts. The weights live
+in `src/geo_autocomplete_internal/hspace.py` and should be recalibrated against
+real usage data when available.
 
-- logarithmic population;
-- a small focus-market prior;
-- a research-hub bonus;
-- a national-capital bonus.
+The ROR adapter selects records with `status=active` and the `education` type.
+It retains stable IDs, acronyms, aliases, multilingual labels, domains,
+location, website, and source release. ROR's education type is intentionally
+broad; clients should keep free-text affiliation input for missing or
+non-institutional values.
 
-The output exposes both `ranking_score` and `ranking_reasons`. Current focus
-markets include the United States, Europe, Singapore, China, India, Japan,
-South Korea, Canada, Australia, and the Middle East. These weights are explicit
-product priors, not claims about measured researcher counts. They should be
-recalibrated against OpenAlex, ROR, and HSpace usage data as the product grows.
+See [`examples/hspace/`](examples/hspace/) for the complete consumer recipe.
 
-Market weights and research hubs are configured in
-`src/geo_autocomplete_internal/hspace.py`.
+## Database recipe
 
-### HSpace university profile
+Publishing a table foundation adds value when it is a tested adapter for a
+real artifact. Publishing a universal migration/ORM layer would blur the
+project boundary, so this repository includes only the typed university recipe
+used by both reference sites:
 
-The university builder uses only the canonical ROR JSON dump. Release v2.10
-contains 132,537 research organizations; the profile selects the 24,725 records
-that have `status=active` and include the `education` type. Each row retains:
-
-- the stable ROR ID and display name;
-- acronyms, aliases, and multilingual labels;
-- country, city, administrative region, coordinates, and GeoNames ID;
-- organization types, establishment year, domains, and official website;
-- an explicit HSpace priority score and its component reasons.
-
-ROR's `education` type is deliberately broad: it includes universities,
-colleges, specialist institutes, and some secondary-education organizations.
-The profile keeps this breadth to avoid silently removing valid affiliations.
-Clients should keep a free-text fallback for organizations that are not yet in
-ROR.
-
-Autocomplete matching is implemented by `search_universities` in
-`src/geo_autocomplete_internal/universities.py`. It applies exact, full-prefix,
-token-prefix, and substring matching in that order across every ROR name and
-the official domain. Static priority is only a tie-breaker within the same text
-match quality; an empty-query global ranking is not intended as a university
-league table.
-
-```python
-from geo_autocomplete_internal import (
-    UniversitySearchIndex,
-    build_university_index,
-    load_ror_organizations,
-)
-
-universities = build_university_index(
-    load_ror_organizations("input/ror_data/v2.10-2026-07-20-ror-data.json")
-)
-search = UniversitySearchIndex(universities)
-suggestions = search.search("MBZUAI", limit=10)
+```text
+recipes/supabase/university_index.sql
 ```
 
-The static score uses only ROR fields plus the existing transparent HSpace
-focus-region and research-hub configuration. The `funder` type acts as a small
-research-activity signal. No commercial rankings or external institution
-datasets are incorporated.
+It creates one private `university_index` table, search indexes, normalization,
+a bounded RPC, and restrictive RLS. Generate its deterministic batched seed:
 
-The raw ROR JSON is not committed because it exceeds GitHub's file-size limit.
-See `input/ror_data/README.md` for the pinned release and download instructions.
+```bash
+python3 scripts/build_university_seed_sql.py \
+  --output /tmp/university_index_seed.sql
+```
+
+Apply the foundation before the seed. Direct anonymous/authenticated table
+reads remain denied; applications expose a strict HTTP contract over the RPC.
+See [`recipes/supabase/`](recipes/supabase/) for deployment and security notes.
+
+## Reference consumers
+
+- [DSML backend](https://github.com/sneddy/dsmlkz_backend) and
+  [frontend](https://github.com/sneddy/dsmlkz_frontend) use the compatibility
+  city profile and their own copy of the ROR university index.
+- [HSpace](https://github.com/sneddy/hspace) uses the global city profile and
+  an independently seeded copy of the same ROR university index.
+
+Both sites keep autocomplete optional and free text. A suggestion is canonical
+metadata, not proof of residence, employment, enrollment, or institutional
+membership.
 
 ## Architecture
 
 ```text
-input/worldcities.csv          input/ror_data/*.json
-          \                              /
-           +------------+---------------+
-                        v
+src/stateless_autocomplete/
+  core.py                         public generic matching and ranking
+
 src/geo_autocomplete_internal/
-        |-- dsml.py       legacy selection and ordering
-        |-- hspace.py     global selection and research ranking
-        |-- ror.py        streaming ROR JSON parsing
-        |-- universities.py  organization ranking and query matching
-        |-- io.py         parsing, translations, and CSV export
-        |-- models.py     shared immutable city and organization models
-        `-- cli.py        reusable build orchestration
-        |
-        +--> dist/dsml/cities_index_with_ru.csv
-        +--> dist/hspace/cities_index.csv
-        `--> dist/hspace/universities_index.csv
+  models.py                       typed city and organization records
+  dsml.py                         legacy compatibility profile
+  hspace.py                       global research profile
+  ror.py                          streaming ROR parser
+  universities.py                ROR adapter over the public core
+  io.py                           CSV and SQL seed exporters
+  cli.py                          reusable build orchestration
+
+scripts/                          stable build entrypoints
+examples/                         custom, DSML, and HSpace consumers
+recipes/supabase/                 optional typed database adapter
+dist/                             reproducible release artifacts
 ```
 
-The scripts contain only command-line argument handling. Reusable behavior
-lives in the internal package and can be imported by tests or future exporters.
+The site-named modules contain profile policy, not framework behavior. The
+scripts contain only argument handling. Reusable search behavior lives in the
+public package and can be installed independently of the example builders.
 
 ## Validation
 
 ```bash
 PYTHONPATH=src python3 -m unittest discover -s tests -v
+python3 scripts/build_dsml_index.py --output /tmp/dsml.csv
+python3 scripts/build_hspace_index.py --output /tmp/hspace.csv
+python3 scripts/build_university_index.py \
+  --source tests/fixtures/ror_sample.json \
+  --output /tmp/universities.csv
+python3 scripts/build_university_seed_sql.py \
+  --source tests/fixtures/ror_sample.json \
+  --source-release ror-test \
+  --output /tmp/universities.sql
 ```
 
-The test suite verifies:
-
-- exact DSML compatibility across all 398 records;
-- full-source HSpace export behavior;
-- default HSpace coverage and capital inclusion;
-- configured research-hub resolution;
-- representative global ranking behavior;
-- streaming ROR parsing and active-education filtering;
-- exact, prefix, localized-name, acronym, and domain matching;
-- presence of Nazarbayev University and MBZUAI in the pinned full dump.
+The suite covers the generic match contract, all 398 DSML compatibility rows,
+HSpace coverage and research hubs, ROR streaming/filtering, acronym/domain/
+localized-name matching, SQL seed generation, database recipe permissions, and
+the presence of Nazarbayev University and MBZUAI in the pinned full release.
 
 ## Data provenance
 
-The world-cities snapshot and derived CSV artifacts are based on the
+The world-cities snapshot and derived city artifacts are based on the
 [SimpleMaps World Cities Database](https://simplemaps.com/data/world-cities),
-licensed under CC BY 4.0. See [NOTICE.md](NOTICE.md) for attribution details.
+licensed under CC BY 4.0.
 
 The university artifact is derived from ROR v2.10. ROR metadata is dedicated
 to the public domain under CC0; its GeoNames-derived location fields are
-licensed under CC BY 4.0. See [NOTICE.md](NOTICE.md) for details.
+licensed under CC BY 4.0. See [`NOTICE.md`](NOTICE.md) for full attribution.
+
+The raw ROR JSON is not committed because it exceeds GitHub's file-size limit.
 
 ## Legacy notebook
 
-`demo.ipynb` is retained as the historical source of the DSML rules. It relies
-on manual cell ordering and translation experiments, so it should not be used
-for production builds.
+`demo.ipynb` is retained as historical context for the DSML rules. It depends
+on manual cell ordering and translation experiments and is not a production
+build path.
 
 ## License
 
-Project code is released under the [MIT License](LICENSE). The bundled source
-data and derived datasets retain their respective data licenses as described in
-[NOTICE.md](NOTICE.md).
+Project code is released under the [MIT License](LICENSE). Bundled source data
+and derived datasets retain their respective licenses as described in
+[`NOTICE.md`](NOTICE.md).
